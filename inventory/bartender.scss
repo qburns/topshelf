@@ -6,7 +6,7 @@
 // Bring on the Bourbon, Neat, Bitters, Chasers, and Garnish it
 @import "recipes/bourbon/app/assets/stylesheets/bourbon";
 @import "recipes/neat/app/assets/stylesheets/neat";
-@import "drinks/topshelf/topshelf"; //Top Shelf is where we import Bitters and Grid Setup. Refills can also be enabled.
+@import "ingredients/topshelf/topshelf"; //Top Shelf is where we import Bitters and Grid Setup. Refills can also be enabled.
 @import "recipes/chasers/src/chasers";
 @import "recipes/garnish/src/garnish";
 
@@ -17,19 +17,19 @@ bourbon/settings/_px-to-em.scss - set other than 16
 bourbon/addons/_font-family.scss - font families
 
 bitters/_variables.scss - colors and type
-drinks/topshelf/_topshelf.scss - where we import bitters
+ingredients/topshelf/_topshelf.scss - where we import bitters
 
 
 neat/settings/_visual-grid.scss - visual grid appearance & on/off
-drinks/topshelf/_grid-setup.scss - grid settings override
+ingredients/topshelf/_grid-setup.scss - grid settings override
 
 */
 
 
-// Import Drinks - Our main stylesheets + repeated styles used for sections
-@import "drinks/ambiance";
-@import "drinks/structure";
-//@import "drinks/header";
+// Import Ingredients - Our main stylesheets + repeated styles used for sections
+@import "ingredients/ambiance";
+@import "ingredients/structure";
+//@import "ingredients/header";
 
 
 
@@ -40,10 +40,10 @@ drinks/topshelf/_grid-setup.scss - grid settings override
 
 
 /*
- USING REFILLS + DRINKS
+ USING REFILLS + INGREDIENTS
 
-Drinks is our folder for additional (non boilerplate-required) styles. Refills by Thoughtbot is included in this folder.
-To use universally, uncomment / add line to drinks/topshelf/_topshelf.scss
+Ingredients is our folder for additional (non boilerplate-required) styles. Refills by Thoughtbot is included in this folder.
+To use universally, uncomment / add line to ingredients/topshelf/_topshelf.scss
 
  [  Or you can use it in individual page styles (inventory/rooms/)
       EX: @import "../recipes/refills/_accordion.scss"  ]

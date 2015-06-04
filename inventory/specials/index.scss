@@ -12,7 +12,7 @@ body {
 }
 
 
-//Header styles (Would be @import '/drinks/header';)
+//Header styles (Would be @import '/ingredients/header';)
 .psuedo_header {
 
   display:block;
@@ -53,8 +53,7 @@ body {
 
 }
 
-
-//Masthead styles (Would be @import '/drinks/masthead';)
+//Masthead styles (Would be @import '/ingredients/masthead';)
 
 .masthead {
   @include outer-container();
