@@ -1,0 +1,27 @@
+// TODO: Setup your site's ambiance and feel
+
+
+/*====================================
+Ambiance (colors, links, branding, etc)
+====================================*/
+
+/*------------------
+COLORS/TEXT/LINKS
+------------------*/
+
+$main: #FBFCFC;
+$main-dark: #BDC3C7;
+$text: #7F8C8D;
+$link: #E74C3C;
+$hover: #D14233;
+
+a:link { color:$link; text-decoration: none; }
+a:visited {color:$link;}
+a:hover {color:$hover;}
+a:active {color:$link;}
+
+
+$sans-serif: “HelveticaNeue”, “Helvetica Neue”, Helvetica, Tahoma, Arial, sans-serif;
+$serif: Garamond, "Adobe Garamond Pro", "Hoefler Text", Georgia, serif;
+
+

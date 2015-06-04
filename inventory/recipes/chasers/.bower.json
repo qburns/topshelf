@@ -1,0 +1,40 @@
+{
+  "name": "chasers",
+  "version": "0.3.0",
+  "homepage": "http://github.com/kennethormandy/chasers",
+  "description": "Bourbon Neat helpers, making complex, mobile-first layouts a little easier.",
+  "main": "src/_chasers.scss",
+  "license": "MIT",
+  "authors": [
+    "Kenneth Ormandy <kenneth@chloi.io>"
+  ],
+  "contributors": [
+    "Josh Fry",
+    "Johannes Schmidt",
+    "Kenneth Ormandy"
+  ],
+  "keywords": [
+    "bourbon",
+    "neat",
+    "grid",
+    "mobile first",
+    "css"
+  ],
+  "ignore": [
+    "./test",
+    "./node_modules",
+    "./bower_components",
+    "./components",
+    "./CONTRIBUTING.md",
+    "**/.*"
+  ],
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.0",
+    "commit": "ebe2d5f177b4b5b4eb5c7fecc58286e6da2e2f7a"
+  },
+  "_source": "git://github.com/kennethormandy/chasers.git",
+  "_target": "~0.3.0",
+  "_originalSource": "chasers"
+}

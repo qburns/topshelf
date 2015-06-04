@@ -1,0 +1,20 @@
+{
+  "name": "modernizr-mixin",
+  "version": "3.0.6",
+  "main": "modernizr.scss",
+  "author": "Daniel Guillan",
+  "ignore": [
+    "*",
+    "!stylesheets/_modernizr.scss"
+  ],
+  "homepage": "https://github.com/danielguillan/modernizr-mixin",
+  "_release": "3.0.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.6",
+    "commit": "97efa9bd13d2a0acb55ef250afbf1417dfa3cf4d"
+  },
+  "_source": "git://github.com/danielguillan/modernizr-mixin.git",
+  "_target": "~3.0.5",
+  "_originalSource": "modernizr-mixin"
+}

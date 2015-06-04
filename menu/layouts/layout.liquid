@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title block allowing child pages to override -->
+    <title>{% block title %}Empty{% endblock %}</title>
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+    <!-- Default Styles -->
+    {{ "bartender.css" | asset_url | stylesheet_tag }}
+
+    <!-- Style block allowing child pages to inject their own styles -->
+    {% block styles %}{% endblock %}
+
+    <body>
+
+    {% block header %}{% endblock %}
+
+        <!-- Page Contents -->
+
+            <div id="page-content">
+                {% block content %}{% endblock %}
+            </div>
+
+
+    {% block footer %}{% endblock %}
+
+
+    <!-- Default Scripts - Accountant holds Google Analytics -->
+    {{ "barback.js" | asset_url | script_tag }}
+    {% include "scripts" %}
+    {% include "accountant" %}
+
+    <!-- Script block allowing child pages to inject their own scripts -->
+    {% block scripts %}{% endblock %}
+
+    </body>
+
+</html>

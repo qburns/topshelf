@@ -1,0 +1,32 @@
+{
+  "name": "chasers",
+  "description": "Bourbon Neat helpers, making complex, mobile-first layouts a little easier.",
+  "version": "0.3.0",
+  "author": "Kenneth Ormandy <hello@kennethormandy.com>",
+  "contributors": [
+    "Josh Fry",
+    "Johannes Schmidt",
+    "Kenneth Ormandy"
+  ],
+  "main": "src/_chasers.scss",
+  "scripts": {
+    "test": "harp server -p 9023 & open http://localhost:9023/test"
+  },
+  "repository": "https://github.com/kennethormandy/chasers.git",
+  "devDependencies": {
+    "bourbon": "git://github.com/thoughtbot/bourbon#v3.2.3",
+    "neat": "git://github.com/kennethormandy/neat"
+  },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "src"
+  ],
+  "keywords": [
+    "sass",
+    "css",
+    "mixins",
+    "bourbon",
+    "neat"
+  ]
+}

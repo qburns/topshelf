@@ -1,0 +1,2354 @@
+/* [less, inventory/recipes/fontawesome/less, font-awesome.less] */
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 4, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/core.less */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+/* makes the font 33% larger relative to the icon container */
+/* line 5, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/larger.less */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+/* line 10, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/larger.less */
+.fa-2x {
+  font-size: 2em;
+}
+/* line 11, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/larger.less */
+.fa-3x {
+  font-size: 3em;
+}
+/* line 12, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/larger.less */
+.fa-4x {
+  font-size: 4em;
+}
+/* line 13, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/larger.less */
+.fa-5x {
+  font-size: 5em;
+}
+/* line 3, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/fixed-width.less */
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+/* line 4, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/list.less */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+/* line 8, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/list.less */
+.fa-ul > li {
+  position: relative;
+}
+/* line 10, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/list.less */
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+/* line 16, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/list.less */
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+/* line 4, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/bordered-pulled.less */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+/* line 10, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/bordered-pulled.less */
+.pull-right {
+  float: right;
+}
+/* line 11, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/bordered-pulled.less */
+.pull-left {
+  float: left;
+}
+/* line 14, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/bordered-pulled.less */
+.fa.pull-left {
+  margin-right: .3em;
+}
+/* line 15, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/bordered-pulled.less */
+.fa.pull-right {
+  margin-left: .3em;
+}
+/* line 4, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/animated.less */
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+/* line 9, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/animated.less */
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-spin {
+  /* line 15, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/animated.less */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  /* line 19, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/animated.less */
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  /* line 26, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/animated.less */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  /* line 30, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/animated.less */
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 4, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/rotated-flipped.less */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+/* line 5, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/rotated-flipped.less */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 6, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/rotated-flipped.less */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+/* line 8, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/rotated-flipped.less */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+/* line 9, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/rotated-flipped.less */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/* line 14, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/rotated-flipped.less */
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+/* line 4, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/stacked.less */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+/* line 12, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/stacked.less */
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 18, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/stacked.less */
+.fa-stack-1x {
+  line-height: inherit;
+}
+/* line 19, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/stacked.less */
+.fa-stack-2x {
+  font-size: 2em;
+}
+/* line 20, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/stacked.less */
+.fa-inverse {
+  color: #ffffff;
+}
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 4, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-glass:before {
+  content: "\f000";
+}
+/* line 5, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-music:before {
+  content: "\f001";
+}
+/* line 6, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-search:before {
+  content: "\f002";
+}
+/* line 7, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+/* line 8, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-heart:before {
+  content: "\f004";
+}
+/* line 9, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-star:before {
+  content: "\f005";
+}
+/* line 10, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-star-o:before {
+  content: "\f006";
+}
+/* line 11, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-user:before {
+  content: "\f007";
+}
+/* line 12, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-film:before {
+  content: "\f008";
+}
+/* line 13, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-th-large:before {
+  content: "\f009";
+}
+/* line 14, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-th:before {
+  content: "\f00a";
+}
+/* line 15, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-th-list:before {
+  content: "\f00b";
+}
+/* line 16, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-check:before {
+  content: "\f00c";
+}
+/* line 17, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "\f00d";
+}
+/* line 20, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+/* line 21, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-search-minus:before {
+  content: "\f010";
+}
+/* line 22, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-power-off:before {
+  content: "\f011";
+}
+/* line 23, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-signal:before {
+  content: "\f012";
+}
+/* line 24, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013";
+}
+/* line 26, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-trash-o:before {
+  content: "\f014";
+}
+/* line 27, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-home:before {
+  content: "\f015";
+}
+/* line 28, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-o:before {
+  content: "\f016";
+}
+/* line 29, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-clock-o:before {
+  content: "\f017";
+}
+/* line 30, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-road:before {
+  content: "\f018";
+}
+/* line 31, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-download:before {
+  content: "\f019";
+}
+/* line 32, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+/* line 33, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+/* line 34, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-inbox:before {
+  content: "\f01c";
+}
+/* line 35, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+/* line 36, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e";
+}
+/* line 38, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-refresh:before {
+  content: "\f021";
+}
+/* line 39, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-list-alt:before {
+  content: "\f022";
+}
+/* line 40, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-lock:before {
+  content: "\f023";
+}
+/* line 41, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-flag:before {
+  content: "\f024";
+}
+/* line 42, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-headphones:before {
+  content: "\f025";
+}
+/* line 43, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-volume-off:before {
+  content: "\f026";
+}
+/* line 44, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-volume-down:before {
+  content: "\f027";
+}
+/* line 45, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-volume-up:before {
+  content: "\f028";
+}
+/* line 46, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-qrcode:before {
+  content: "\f029";
+}
+/* line 47, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-barcode:before {
+  content: "\f02a";
+}
+/* line 48, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tag:before {
+  content: "\f02b";
+}
+/* line 49, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tags:before {
+  content: "\f02c";
+}
+/* line 50, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-book:before {
+  content: "\f02d";
+}
+/* line 51, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+/* line 52, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-print:before {
+  content: "\f02f";
+}
+/* line 53, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-camera:before {
+  content: "\f030";
+}
+/* line 54, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-font:before {
+  content: "\f031";
+}
+/* line 55, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bold:before {
+  content: "\f032";
+}
+/* line 56, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-italic:before {
+  content: "\f033";
+}
+/* line 57, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-text-height:before {
+  content: "\f034";
+}
+/* line 58, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-text-width:before {
+  content: "\f035";
+}
+/* line 59, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-align-left:before {
+  content: "\f036";
+}
+/* line 60, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-align-center:before {
+  content: "\f037";
+}
+/* line 61, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-align-right:before {
+  content: "\f038";
+}
+/* line 62, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-align-justify:before {
+  content: "\f039";
+}
+/* line 63, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-list:before {
+  content: "\f03a";
+}
+/* line 64, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b";
+}
+/* line 66, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-indent:before {
+  content: "\f03c";
+}
+/* line 67, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+/* line 68, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "\f03e";
+}
+/* line 71, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pencil:before {
+  content: "\f040";
+}
+/* line 72, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-map-marker:before {
+  content: "\f041";
+}
+/* line 73, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-adjust:before {
+  content: "\f042";
+}
+/* line 74, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tint:before {
+  content: "\f043";
+}
+/* line 75, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+/* line 77, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+/* line 78, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-check-square-o:before {
+  content: "\f046";
+}
+/* line 79, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrows:before {
+  content: "\f047";
+}
+/* line 80, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-step-backward:before {
+  content: "\f048";
+}
+/* line 81, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+/* line 82, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-backward:before {
+  content: "\f04a";
+}
+/* line 83, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-play:before {
+  content: "\f04b";
+}
+/* line 84, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pause:before {
+  content: "\f04c";
+}
+/* line 85, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-stop:before {
+  content: "\f04d";
+}
+/* line 86, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-forward:before {
+  content: "\f04e";
+}
+/* line 87, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+/* line 88, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-step-forward:before {
+  content: "\f051";
+}
+/* line 89, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-eject:before {
+  content: "\f052";
+}
+/* line 90, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+/* line 91, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+/* line 92, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+/* line 93, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+/* line 94, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-times-circle:before {
+  content: "\f057";
+}
+/* line 95, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-check-circle:before {
+  content: "\f058";
+}
+/* line 96, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-question-circle:before {
+  content: "\f059";
+}
+/* line 97, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+/* line 98, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+/* line 99, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+/* line 100, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+/* line 101, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ban:before {
+  content: "\f05e";
+}
+/* line 102, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+/* line 103, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+/* line 104, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+/* line 105, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+/* line 106, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064";
+}
+/* line 108, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-expand:before {
+  content: "\f065";
+}
+/* line 109, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-compress:before {
+  content: "\f066";
+}
+/* line 110, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-plus:before {
+  content: "\f067";
+}
+/* line 111, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-minus:before {
+  content: "\f068";
+}
+/* line 112, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-asterisk:before {
+  content: "\f069";
+}
+/* line 113, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+/* line 114, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-gift:before {
+  content: "\f06b";
+}
+/* line 115, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-leaf:before {
+  content: "\f06c";
+}
+/* line 116, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-fire:before {
+  content: "\f06d";
+}
+/* line 117, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-eye:before {
+  content: "\f06e";
+}
+/* line 118, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+/* line 119, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+/* line 121, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-plane:before {
+  content: "\f072";
+}
+/* line 122, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-calendar:before {
+  content: "\f073";
+}
+/* line 123, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-random:before {
+  content: "\f074";
+}
+/* line 124, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-comment:before {
+  content: "\f075";
+}
+/* line 125, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-magnet:before {
+  content: "\f076";
+}
+/* line 126, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+/* line 127, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+/* line 128, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-retweet:before {
+  content: "\f079";
+}
+/* line 129, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+/* line 130, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-folder:before {
+  content: "\f07b";
+}
+/* line 131, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+/* line 132, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+/* line 133, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+/* line 134, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "\f080";
+}
+/* line 136, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+/* line 137, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+/* line 138, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+/* line 139, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-key:before {
+  content: "\f084";
+}
+/* line 140, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085";
+}
+/* line 142, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-comments:before {
+  content: "\f086";
+}
+/* line 143, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+/* line 144, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+/* line 145, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-star-half:before {
+  content: "\f089";
+}
+/* line 146, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+/* line 147, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+/* line 148, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+/* line 149, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+/* line 150, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-external-link:before {
+  content: "\f08e";
+}
+/* line 151, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sign-in:before {
+  content: "\f090";
+}
+/* line 152, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-trophy:before {
+  content: "\f091";
+}
+/* line 153, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-github-square:before {
+  content: "\f092";
+}
+/* line 154, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-upload:before {
+  content: "\f093";
+}
+/* line 155, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+/* line 156, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-phone:before {
+  content: "\f095";
+}
+/* line 157, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-square-o:before {
+  content: "\f096";
+}
+/* line 158, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+/* line 159, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-phone-square:before {
+  content: "\f098";
+}
+/* line 160, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-twitter:before {
+  content: "\f099";
+}
+/* line 161, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a";
+}
+/* line 163, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-github:before {
+  content: "\f09b";
+}
+/* line 164, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-unlock:before {
+  content: "\f09c";
+}
+/* line 165, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+/* line 166, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-rss:before {
+  content: "\f09e";
+}
+/* line 167, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+/* line 168, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+/* line 169, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bell:before {
+  content: "\f0f3";
+}
+/* line 170, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+/* line 171, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+/* line 172, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+/* line 173, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+/* line 174, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+/* line 175, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+/* line 176, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+/* line 177, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+/* line 178, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+/* line 179, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-globe:before {
+  content: "\f0ac";
+}
+/* line 180, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+/* line 181, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+/* line 182, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-filter:before {
+  content: "\f0b0";
+}
+/* line 183, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+/* line 184, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+/* line 185, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0";
+}
+/* line 187, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1";
+}
+/* line 189, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+/* line 190, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-flask:before {
+  content: "\f0c3";
+}
+/* line 191, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4";
+}
+/* line 193, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5";
+}
+/* line 195, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+/* line 196, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7";
+}
+/* line 198, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-square:before {
+  content: "\f0c8";
+}
+/* line 199, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "\f0c9";
+}
+/* line 202, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+/* line 203, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+/* line 204, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+/* line 205, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-underline:before {
+  content: "\f0cd";
+}
+/* line 206, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-table:before {
+  content: "\f0ce";
+}
+/* line 207, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-magic:before {
+  content: "\f0d0";
+}
+/* line 208, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-truck:before {
+  content: "\f0d1";
+}
+/* line 209, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+/* line 210, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+/* line 211, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+/* line 212, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+/* line 213, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-money:before {
+  content: "\f0d6";
+}
+/* line 214, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+/* line 215, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+/* line 216, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+/* line 217, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+/* line 218, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-columns:before {
+  content: "\f0db";
+}
+/* line 219, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc";
+}
+/* line 221, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "\f0dd";
+}
+/* line 223, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "\f0de";
+}
+/* line 225, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+/* line 226, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+/* line 227, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2";
+}
+/* line 229, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3";
+}
+/* line 231, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+/* line 233, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+/* line 234, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+/* line 235, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7";
+}
+/* line 237, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+/* line 238, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+/* line 239, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea";
+}
+/* line 241, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+/* line 242, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+/* line 243, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+/* line 244, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+/* line 245, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+/* line 246, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+/* line 247, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+/* line 248, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+/* line 249, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+/* line 250, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+/* line 251, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+/* line 252, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+/* line 253, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+/* line 254, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+/* line 255, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+/* line 256, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+/* line 257, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-beer:before {
+  content: "\f0fc";
+}
+/* line 258, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+/* line 259, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+/* line 260, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+/* line 261, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+/* line 262, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+/* line 263, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+/* line 264, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angle-left:before {
+  content: "\f104";
+}
+/* line 265, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angle-right:before {
+  content: "\f105";
+}
+/* line 266, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angle-up:before {
+  content: "\f106";
+}
+/* line 267, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angle-down:before {
+  content: "\f107";
+}
+/* line 268, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-desktop:before {
+  content: "\f108";
+}
+/* line 269, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-laptop:before {
+  content: "\f109";
+}
+/* line 270, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tablet:before {
+  content: "\f10a";
+}
+/* line 271, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+/* line 273, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+/* line 274, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+/* line 275, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+/* line 276, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-spinner:before {
+  content: "\f110";
+}
+/* line 277, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-circle:before {
+  content: "\f111";
+}
+/* line 278, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+}
+/* line 280, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-github-alt:before {
+  content: "\f113";
+}
+/* line 281, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-folder-o:before {
+  content: "\f114";
+}
+/* line 282, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+/* line 283, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-smile-o:before {
+  content: "\f118";
+}
+/* line 284, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-frown-o:before {
+  content: "\f119";
+}
+/* line 285, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+/* line 286, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+/* line 287, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+/* line 288, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+/* line 289, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+/* line 290, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-terminal:before {
+  content: "\f120";
+}
+/* line 291, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-code:before {
+  content: "\f121";
+}
+/* line 292, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "\f122";
+}
+/* line 294, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+/* line 297, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+/* line 298, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-crop:before {
+  content: "\f125";
+}
+/* line 299, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-code-fork:before {
+  content: "\f126";
+}
+/* line 300, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127";
+}
+/* line 302, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-question:before {
+  content: "\f128";
+}
+/* line 303, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-info:before {
+  content: "\f129";
+}
+/* line 304, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+/* line 305, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-superscript:before {
+  content: "\f12b";
+}
+/* line 306, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-subscript:before {
+  content: "\f12c";
+}
+/* line 307, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-eraser:before {
+  content: "\f12d";
+}
+/* line 308, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+/* line 309, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-microphone:before {
+  content: "\f130";
+}
+/* line 310, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+/* line 311, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-shield:before {
+  content: "\f132";
+}
+/* line 312, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+/* line 313, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+/* line 314, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-rocket:before {
+  content: "\f135";
+}
+/* line 315, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+/* line 316, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+/* line 317, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+/* line 318, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+/* line 319, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+/* line 320, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-html5:before {
+  content: "\f13b";
+}
+/* line 321, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-css3:before {
+  content: "\f13c";
+}
+/* line 322, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-anchor:before {
+  content: "\f13d";
+}
+/* line 323, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+/* line 324, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bullseye:before {
+  content: "\f140";
+}
+/* line 325, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+/* line 326, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+/* line 327, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-rss-square:before {
+  content: "\f143";
+}
+/* line 328, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-play-circle:before {
+  content: "\f144";
+}
+/* line 329, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ticket:before {
+  content: "\f145";
+}
+/* line 330, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-minus-square:before {
+  content: "\f146";
+}
+/* line 331, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+/* line 332, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-level-up:before {
+  content: "\f148";
+}
+/* line 333, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-level-down:before {
+  content: "\f149";
+}
+/* line 334, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-check-square:before {
+  content: "\f14a";
+}
+/* line 335, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+/* line 336, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+/* line 337, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-share-square:before {
+  content: "\f14d";
+}
+/* line 338, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-compass:before {
+  content: "\f14e";
+}
+/* line 339, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+/* line 341, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+/* line 343, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152";
+}
+/* line 345, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153";
+}
+/* line 347, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-gbp:before {
+  content: "\f154";
+}
+/* line 348, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155";
+}
+/* line 350, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156";
+}
+/* line 352, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
+}
+/* line 356, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158";
+}
+/* line 359, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159";
+}
+/* line 361, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a";
+}
+/* line 363, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file:before {
+  content: "\f15b";
+}
+/* line 364, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-text:before {
+  content: "\f15c";
+}
+/* line 365, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+/* line 366, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+/* line 367, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+/* line 368, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+/* line 369, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+/* line 370, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+/* line 371, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+/* line 372, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+/* line 373, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+/* line 374, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-youtube:before {
+  content: "\f167";
+}
+/* line 375, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-xing:before {
+  content: "\f168";
+}
+/* line 376, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-xing-square:before {
+  content: "\f169";
+}
+/* line 377, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+/* line 378, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+/* line 379, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+/* line 380, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-instagram:before {
+  content: "\f16d";
+}
+/* line 381, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-flickr:before {
+  content: "\f16e";
+}
+/* line 382, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-adn:before {
+  content: "\f170";
+}
+/* line 383, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+/* line 384, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+/* line 385, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tumblr:before {
+  content: "\f173";
+}
+/* line 386, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+/* line 387, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+/* line 388, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+/* line 389, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+/* line 390, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+/* line 391, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-apple:before {
+  content: "\f179";
+}
+/* line 392, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-windows:before {
+  content: "\f17a";
+}
+/* line 393, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-android:before {
+  content: "\f17b";
+}
+/* line 394, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-linux:before {
+  content: "\f17c";
+}
+/* line 395, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+/* line 396, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-skype:before {
+  content: "\f17e";
+}
+/* line 397, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-foursquare:before {
+  content: "\f180";
+}
+/* line 398, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-trello:before {
+  content: "\f181";
+}
+/* line 399, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-female:before {
+  content: "\f182";
+}
+/* line 400, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-male:before {
+  content: "\f183";
+}
+/* line 401, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "\f184";
+}
+/* line 403, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sun-o:before {
+  content: "\f185";
+}
+/* line 404, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-moon-o:before {
+  content: "\f186";
+}
+/* line 405, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-archive:before {
+  content: "\f187";
+}
+/* line 406, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bug:before {
+  content: "\f188";
+}
+/* line 407, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-vk:before {
+  content: "\f189";
+}
+/* line 408, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-weibo:before {
+  content: "\f18a";
+}
+/* line 409, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-renren:before {
+  content: "\f18b";
+}
+/* line 410, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+/* line 411, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+/* line 412, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+/* line 413, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+/* line 414, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191";
+}
+/* line 416, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+/* line 417, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+/* line 418, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+/* line 419, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195";
+}
+/* line 421, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+/* line 422, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-space-shuttle:before {
+  content: "\f197";
+}
+/* line 423, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-slack:before {
+  content: "\f198";
+}
+/* line 424, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-envelope-square:before {
+  content: "\f199";
+}
+/* line 425, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-wordpress:before {
+  content: "\f19a";
+}
+/* line 426, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-openid:before {
+  content: "\f19b";
+}
+/* line 427, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\f19c";
+}
+/* line 430, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d";
+}
+/* line 432, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-yahoo:before {
+  content: "\f19e";
+}
+/* line 433, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-google:before {
+  content: "\f1a0";
+}
+/* line 434, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-reddit:before {
+  content: "\f1a1";
+}
+/* line 435, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-reddit-square:before {
+  content: "\f1a2";
+}
+/* line 436, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+/* line 437, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-stumbleupon:before {
+  content: "\f1a4";
+}
+/* line 438, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-delicious:before {
+  content: "\f1a5";
+}
+/* line 439, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-digg:before {
+  content: "\f1a6";
+}
+/* line 440, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pied-piper:before {
+  content: "\f1a7";
+}
+/* line 441, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pied-piper-alt:before {
+  content: "\f1a8";
+}
+/* line 442, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-drupal:before {
+  content: "\f1a9";
+}
+/* line 443, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-joomla:before {
+  content: "\f1aa";
+}
+/* line 444, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-language:before {
+  content: "\f1ab";
+}
+/* line 445, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-fax:before {
+  content: "\f1ac";
+}
+/* line 446, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-building:before {
+  content: "\f1ad";
+}
+/* line 447, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-child:before {
+  content: "\f1ae";
+}
+/* line 448, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-paw:before {
+  content: "\f1b0";
+}
+/* line 449, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-spoon:before {
+  content: "\f1b1";
+}
+/* line 450, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cube:before {
+  content: "\f1b2";
+}
+/* line 451, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cubes:before {
+  content: "\f1b3";
+}
+/* line 452, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-behance:before {
+  content: "\f1b4";
+}
+/* line 453, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-behance-square:before {
+  content: "\f1b5";
+}
+/* line 454, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-steam:before {
+  content: "\f1b6";
+}
+/* line 455, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-steam-square:before {
+  content: "\f1b7";
+}
+/* line 456, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-recycle:before {
+  content: "\f1b8";
+}
+/* line 457, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-automobile:before,
+.fa-car:before {
+  content: "\f1b9";
+}
+/* line 459, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\f1ba";
+}
+/* line 461, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tree:before {
+  content: "\f1bb";
+}
+/* line 462, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-spotify:before {
+  content: "\f1bc";
+}
+/* line 463, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-deviantart:before {
+  content: "\f1bd";
+}
+/* line 464, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-soundcloud:before {
+  content: "\f1be";
+}
+/* line 465, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-database:before {
+  content: "\f1c0";
+}
+/* line 466, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-pdf-o:before {
+  content: "\f1c1";
+}
+/* line 467, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-word-o:before {
+  content: "\f1c2";
+}
+/* line 468, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-excel-o:before {
+  content: "\f1c3";
+}
+/* line 469, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+/* line 470, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\f1c5";
+}
+/* line 473, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\f1c6";
+}
+/* line 475, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\f1c7";
+}
+/* line 477, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\f1c8";
+}
+/* line 479, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-file-code-o:before {
+  content: "\f1c9";
+}
+/* line 480, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-vine:before {
+  content: "\f1ca";
+}
+/* line 481, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-codepen:before {
+  content: "\f1cb";
+}
+/* line 482, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-jsfiddle:before {
+  content: "\f1cc";
+}
+/* line 483, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\f1cd";
+}
+/* line 488, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-circle-o-notch:before {
+  content: "\f1ce";
+}
+/* line 489, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ra:before,
+.fa-rebel:before {
+  content: "\f1d0";
+}
+/* line 491, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ge:before,
+.fa-empire:before {
+  content: "\f1d1";
+}
+/* line 493, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-git-square:before {
+  content: "\f1d2";
+}
+/* line 494, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-git:before {
+  content: "\f1d3";
+}
+/* line 495, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-hacker-news:before {
+  content: "\f1d4";
+}
+/* line 496, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tencent-weibo:before {
+  content: "\f1d5";
+}
+/* line 497, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-qq:before {
+  content: "\f1d6";
+}
+/* line 498, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\f1d7";
+}
+/* line 500, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+/* line 502, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\f1d9";
+}
+/* line 504, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-history:before {
+  content: "\f1da";
+}
+/* line 505, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-genderless:before,
+.fa-circle-thin:before {
+  content: "\f1db";
+}
+/* line 507, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-header:before {
+  content: "\f1dc";
+}
+/* line 508, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-paragraph:before {
+  content: "\f1dd";
+}
+/* line 509, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sliders:before {
+  content: "\f1de";
+}
+/* line 510, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+/* line 511, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-share-alt-square:before {
+  content: "\f1e1";
+}
+/* line 512, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bomb:before {
+  content: "\f1e2";
+}
+/* line 513, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "\f1e3";
+}
+/* line 515, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-tty:before {
+  content: "\f1e4";
+}
+/* line 516, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-binoculars:before {
+  content: "\f1e5";
+}
+/* line 517, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-plug:before {
+  content: "\f1e6";
+}
+/* line 518, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-slideshare:before {
+  content: "\f1e7";
+}
+/* line 519, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-twitch:before {
+  content: "\f1e8";
+}
+/* line 520, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-yelp:before {
+  content: "\f1e9";
+}
+/* line 521, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-newspaper-o:before {
+  content: "\f1ea";
+}
+/* line 522, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-wifi:before {
+  content: "\f1eb";
+}
+/* line 523, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-calculator:before {
+  content: "\f1ec";
+}
+/* line 524, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-paypal:before {
+  content: "\f1ed";
+}
+/* line 525, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-google-wallet:before {
+  content: "\f1ee";
+}
+/* line 526, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cc-visa:before {
+  content: "\f1f0";
+}
+/* line 527, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cc-mastercard:before {
+  content: "\f1f1";
+}
+/* line 528, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cc-discover:before {
+  content: "\f1f2";
+}
+/* line 529, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cc-amex:before {
+  content: "\f1f3";
+}
+/* line 530, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cc-paypal:before {
+  content: "\f1f4";
+}
+/* line 531, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cc-stripe:before {
+  content: "\f1f5";
+}
+/* line 532, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bell-slash:before {
+  content: "\f1f6";
+}
+/* line 533, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bell-slash-o:before {
+  content: "\f1f7";
+}
+/* line 534, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-trash:before {
+  content: "\f1f8";
+}
+/* line 535, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-copyright:before {
+  content: "\f1f9";
+}
+/* line 536, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-at:before {
+  content: "\f1fa";
+}
+/* line 537, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-eyedropper:before {
+  content: "\f1fb";
+}
+/* line 538, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-paint-brush:before {
+  content: "\f1fc";
+}
+/* line 539, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-birthday-cake:before {
+  content: "\f1fd";
+}
+/* line 540, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-area-chart:before {
+  content: "\f1fe";
+}
+/* line 541, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pie-chart:before {
+  content: "\f200";
+}
+/* line 542, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-line-chart:before {
+  content: "\f201";
+}
+/* line 543, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-lastfm:before {
+  content: "\f202";
+}
+/* line 544, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-lastfm-square:before {
+  content: "\f203";
+}
+/* line 545, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-toggle-off:before {
+  content: "\f204";
+}
+/* line 546, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-toggle-on:before {
+  content: "\f205";
+}
+/* line 547, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bicycle:before {
+  content: "\f206";
+}
+/* line 548, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-bus:before {
+  content: "\f207";
+}
+/* line 549, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ioxhost:before {
+  content: "\f208";
+}
+/* line 550, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-angellist:before {
+  content: "\f209";
+}
+/* line 551, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cc:before {
+  content: "\f20a";
+}
+/* line 552, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "\f20b";
+}
+/* line 555, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-meanpath:before {
+  content: "\f20c";
+}
+/* line 556, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-buysellads:before {
+  content: "\f20d";
+}
+/* line 557, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-connectdevelop:before {
+  content: "\f20e";
+}
+/* line 558, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-dashcube:before {
+  content: "\f210";
+}
+/* line 559, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-forumbee:before {
+  content: "\f211";
+}
+/* line 560, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-leanpub:before {
+  content: "\f212";
+}
+/* line 561, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-sellsy:before {
+  content: "\f213";
+}
+/* line 562, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-shirtsinbulk:before {
+  content: "\f214";
+}
+/* line 563, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-simplybuilt:before {
+  content: "\f215";
+}
+/* line 564, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-skyatlas:before {
+  content: "\f216";
+}
+/* line 565, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cart-plus:before {
+  content: "\f217";
+}
+/* line 566, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-cart-arrow-down:before {
+  content: "\f218";
+}
+/* line 567, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-diamond:before {
+  content: "\f219";
+}
+/* line 568, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-ship:before {
+  content: "\f21a";
+}
+/* line 569, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-user-secret:before {
+  content: "\f21b";
+}
+/* line 570, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-motorcycle:before {
+  content: "\f21c";
+}
+/* line 571, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-street-view:before {
+  content: "\f21d";
+}
+/* line 572, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-heartbeat:before {
+  content: "\f21e";
+}
+/* line 573, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-venus:before {
+  content: "\f221";
+}
+/* line 574, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mars:before {
+  content: "\f222";
+}
+/* line 575, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mercury:before {
+  content: "\f223";
+}
+/* line 576, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-transgender:before {
+  content: "\f224";
+}
+/* line 577, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-transgender-alt:before {
+  content: "\f225";
+}
+/* line 578, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-venus-double:before {
+  content: "\f226";
+}
+/* line 579, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mars-double:before {
+  content: "\f227";
+}
+/* line 580, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-venus-mars:before {
+  content: "\f228";
+}
+/* line 581, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mars-stroke:before {
+  content: "\f229";
+}
+/* line 582, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mars-stroke-v:before {
+  content: "\f22a";
+}
+/* line 583, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-mars-stroke-h:before {
+  content: "\f22b";
+}
+/* line 584, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-neuter:before {
+  content: "\f22c";
+}
+/* line 585, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-facebook-official:before {
+  content: "\f230";
+}
+/* line 586, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-pinterest-p:before {
+  content: "\f231";
+}
+/* line 587, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-whatsapp:before {
+  content: "\f232";
+}
+/* line 588, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-server:before {
+  content: "\f233";
+}
+/* line 589, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-user-plus:before {
+  content: "\f234";
+}
+/* line 590, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-user-times:before {
+  content: "\f235";
+}
+/* line 591, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-hotel:before,
+.fa-bed:before {
+  content: "\f236";
+}
+/* line 593, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-viacoin:before {
+  content: "\f237";
+}
+/* line 594, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-train:before {
+  content: "\f238";
+}
+/* line 595, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-subway:before {
+  content: "\f239";
+}
+/* line 596, /Users/quinton/Documents/Web Development/Top Shelfwin 2/inventory/recipes/fontawesome/less/icons.less */
+.fa-medium:before {
+  content: "\f23a";
+}

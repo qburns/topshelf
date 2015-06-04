@@ -1,0 +1,8 @@
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: 'Sass Error: Undefined mixin \'button\'. \A         on line 2 of C:\\Users\\qburns\\Documents\\Web Design\\Personal\\Top Shelf\\inventory\\specials\\index.scss, in `button\' \A         from line 2 of C:\\Users\\qburns\\Documents\\Web Design\\Personal\\Top Shelf\\inventory\\specials\\index.scss \A   Use --trace for backtrace. \A '; }
+
+  body * {
+  	display: none;
+  }

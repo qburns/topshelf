@@ -1,0 +1,106 @@
+
+//Top Shelf Boilerplate - Doing some things in this file to avoid touching the bower managed folders
+//We wouldn't want to lose anything if we update.
+
+// Neat Settings -- uncomment if using Neat
+///////////////////////////////////////////////////////////////////////////////
+
+
+//Make sure you use grid-setup in /topshelf, NOT grid-settings in the bitters directory.
+//grid_variables contains all the grid settings(gutters, columns, max width etc) but we setup the wrapper/container in drinks/structure
+@import "grid_variables";
+
+
+
+// Bitters
+///////////////////////////////////////////////////////////////////////////////
+
+@import "../../recipes/bitters/app/assets/stylesheets/variables";
+@import "../../recipes/bitters/app/assets/stylesheets/typography";
+@import "../../recipes/bitters/app/assets/stylesheets/forms";
+@import "../../recipes/bitters/app/assets/stylesheets/tables";
+@import "../../recipes/bitters/app/assets/stylesheets/lists";
+@import "../../recipes/bitters/app/assets/stylesheets/buttons";
+
+//Bitters has removed header sizing from their typography page, adding it back. Comment out if you want them all to be base size.
+@import "header_sizing";
+
+// Buttons - Bitters is deprecating buttons in their next release, I've got a much more powerful mixin included below
+@import "buttons";
+
+
+// Refills
+// Uncomment the @import here if you want to use the style globally
+// Or grab any line and use it
+///////////////////////////////////////////////////////////////////////////////
+
+//@import "../../recipes/refills/accordion";
+//@import "../../recipes/refills/accordion-tabs";
+//@import "../../recipes/refills/accordion-tabs-minimal";
+//@import "../../recipes/refills/animate";
+//@import "../../recipes/refills/animate-info";
+//@import "../../recipes/refills/badges";
+//@import "../../recipes/refills/breadcrumbs";
+//@import "../../recipes/refills/button-group";
+//@import "../../recipes/refills/cards";
+//@import "../../recipes/refills/centered-navigation";
+//@import "../../recipes/refills/comment";
+//@import "../../recipes/refills/device";
+//@import "../../recipes/refills/dropdown";
+//@import "../../recipes/refills/expander";
+//@import "../../recipes/refills/fade-in";
+//@import "../../recipes/refills/flashes";
+//@import "../../recipes/refills/flex-boxes";
+//@import "../../recipes/refills/footer";
+//@import "../../recipes/refills/footer-2";
+//@import "../../recipes/refills/grid-items";
+//@import "../../recipes/refills/grid-items-lines";
+//@import "../../recipes/refills/hero";
+//@import "../../recipes/refills/hover-tile-animation";
+//@import "../../recipes/refills/icon-bullet-points";
+//@import "../../recipes/refills/image-gradient-dynamic";
+//@import "../../recipes/refills/maps";
+//@import "../../recipes/refills/modal";
+//@import "../../recipes/refills/navigation";
+//@import "../../recipes/refills/pagination";
+//@import "../../recipes/refills/parallax";
+//@import "../../recipes/refills/progress-bar";
+//@import "../../recipes/refills/progress-bar-indication";
+//@import "../../recipes/refills/ribbon";
+//@import "../../recipes/refills/scroll-on-page";
+//@import "../../recipes/refills/search-bar";
+//@import "../../recipes/refills/search-tools";
+//@import "../../recipes/refills/side-image";
+//@import "../../recipes/refills/sliding-panel";
+//@import "../../recipes/refills/stats";
+//@import "../../recipes/refills/switch";
+//@import "../../recipes/refills/tables";
+//@import "../../recipes/refills/tables-minimal";
+//@import "../../recipes/refills/texture-legend";
+//@import "../../recipes/refills/textures";
+//@import "../../recipes/refills/tooltip";
+//@import "../../recipes/refills/vertical-tabs";
+//@import "../../recipes/refills/video";
+
+//If you uncomment this block and apply class unstyled in html, you'll use the unstyled version if available
+
+.unstyled {
+//@import "../../recipes/refills/unstyled/accordion";
+//@import "../../recipes/refills/unstyled/accordion-tabs";
+//@import "../../recipes/refills/unstyled/button-group";
+//@import "../../recipes/refills/unstyled/cards";
+//@import "../../recipes/refills/unstyled/comment";
+//@import "../../recipes/refills/unstyled/dropdown";
+//@import "../../recipes/refills/unstyled/expander";
+//@import "../../recipes/refills/unstyled/footer";
+//@import "../../recipes/refills/unstyled/hover-menu";
+//@import "../../recipes/refills/unstyled/modal";
+//@import "../../recipes/refills/unstyled/navigation";
+//@import "../../recipes/refills/unstyled/navigation-centered";
+//@import "../../recipes/refills/unstyled/search-bar";
+//@import "../../recipes/refills/unstyled/switch";
+//@import "../../recipes/refills/unstyled/tooltip";
+//@import "../../recipes/refills/unstyled/vertical-tabs";
+//@import "../../recipes/refills/unstyled/scroll-on-page";
+//@import "../../recipes/refills/unstyled/sliding-panel";
+}

@@ -1,0 +1,29 @@
+/*---------------------
+BODY/CONTAINER
+----------------------*/
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  color: $text;
+  font-family: $helvetica;
+  font-size: 16px;
+}
+
+body, html {
+  height: 100%;
+}
+
+#wrapper {
+  @include outer-container(); //Make sure you include the #wrapper on your page to throw that thing on a grid
+}
+
+
+.container {
+  @include span-columns(12);
+}
+

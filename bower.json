@@ -1,0 +1,42 @@
+{
+  "name": "Top Shelf for Mixture.io |  Bourbon, Neat & Bitters chilled with extras",
+  "version": "1.0.0",
+  "homepage": "http://potenti.al",
+  "description": "TBA",
+  "keywords": [
+    "sass",
+    "bourbon",
+    "neat",
+    "refills",
+    "sass",
+    "grid",
+    "mixture",
+    "mixture",
+    "boilerplate"
+  ],
+  "authors": [
+    "Potenti.al (http://potenti.al)"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "inventory/staples",
+    "test",
+    "tests",
+    "inventory/recipes"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bourbon": "~4.2.3",
+    "chasers": "~0.3.0",
+    "garnish": "~0.2.1",
+    "neat": "~1.7.2",
+    "normalize-scss": "~3.0.3",
+    "bitters": "~1.0.0",
+    "modernizr-mixin": "~3.0.5",
+    "fontawesome": "~4.3.0",
+    "modernizr": "~2.8.3"
+  }
+}

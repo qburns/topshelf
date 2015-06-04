@@ -1,0 +1,85 @@
+// This file includes an example page utilizing some of the things included in this boilerplate. Delete this file or reuse it, your choice :)
+// Normally, a lot of these styles like the header would be used in partial _example.scss files and imported to your main sheet
+// but I don't want to force you to delete a bunch of bullshit to get started. Code cleanly and seperate your stuff.
+
+// TODO: Delete this default example scss sheet and make your own magic happen
+
+$visual-grid: true;
+
+//Would be in _structure.scss
+body {
+  padding-top: em(30);
+}
+
+
+//Header styles (Would be @import '/drinks/header';)
+.psuedo_header {
+
+  display:block;
+
+  h5 {
+    display: inline-block;
+    font-weight: weight(light); //using Garnish mixin for font weights
+    line-height: 240%;
+
+    @include media($medium-screen) {
+      @include span-columns(4);
+    }
+
+    div {
+      @include hide-text();
+      width: 48px;
+      height: 45px;
+      display: inline-block;
+      background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjMDBBRUYwIiBkPSJNMTAwLDY0LjIyNUMxMDAsODEuNDkzLDg2LjA0Miw5NS41LDY4LjgzNiw5NS41UzM3LjY3MSw4MS40OTMsMzcuNjcxLDY0LjIyNXMxMy45NTgtMzEuMjc1LDMxLjE2NC0zMS4yNzUgQzg2LjA0MiwzMi45NTEsMTAwLDQ2Ljk1OCwxMDAsNjQuMjI1eiIvPjxwYXRoIGZpbGw9IiMwMEE2NTEiIGQ9Ik0zNy44ODcsNjAuNTk5YzMuNzI0LDEuNTc4LDcuODE3LDIuNDUxLDEyLjExMywyLjQ1MWMxNS45ODgsMCwyOS4xNTYtMTIuMDg0LDMwLjk0OS0yNy42NDYgYy0zLjcyNC0xLjU3OS03LjgxNy0yLjQ1Mi0xMi4xMTMtMi40NTJDNTIuODUyLDMyLjk1MSwzOS42OCw0NS4wMzksMzcuODg3LDYwLjU5OXoiLz48cGF0aCBmaWxsPSIjRUQxQzI0IiBkPSJNMzEuMTY0LDMyLjk1MWMtNC4yOTEsMC04LjM3OSwwLjg3MS0xMi4xLDIuNDQ1YzEuMzAzLDExLjMxNiw4LjYwMywyMC43OTgsMTguNjQ3LDI1LjEyOCBjMC4wMzMsMC4wMTQsMC4wOTgsMC4wNDIsMC4wOTgsMC4wNDJsMC4wNzcsMC4wMzNjMCwwLDAuMDA2LTAuMDU1LDAuMDEtMC4wODNjMS4wMTgtOC42MzUsNS41NDYtMTYuMTkxLDEyLjEwOC0yMS4xOTkgQzQ0Ljc3MSwzNS4zMjQsMzguMjQ1LDMyLjk1MSwzMS4xNjQsMzIuOTUxeiIvPjxwYXRoIGZpbGw9IiNFQzAwOEMiIGQ9Ik0zNy42NzIsNjQuMjI1YzAtMS4yNzMsMC4wODUtMi41MjUsMC4yMzItMy43NThjLTAuMDAyLDAuMDE2LTAuMDA1LDAuMDMyLTAuMDA3LDAuMDQ4IGMtMC4wMDMsMC4wMjgtMC4wMSwwLjA4My0wLjAxLDAuMDgzbC0wLjA3Ny0wLjAzM2MwLDAtMC4wNjUtMC4wMjgtMC4wOTgtMC4wNDJjLTEwLjA0NS00LjMzLTE3LjM0NS0xMy44MTItMTguNjQ3LTI1LjEyOCBDNy44NjMsNDAuMTM3LDAsNTEuMjU5LDAsNjQuMjI1QzAsODEuNDk4LDEzLjk1Myw5NS41LDMxLjE2NCw5NS41YzcuMDgsMCwxMy42MDUtMi4zNzMsMTguODM4LTYuMzY0IEM0Mi41MTIsODMuNDIzLDM3LjY3Miw3NC4zOTEsMzcuNjcyLDY0LjIyNXoiLz48cGF0aCBmaWxsPSIjRkZGMjAwIiBkPSJNNTAsMC41Yy0xNy4yMTIsMC0zMS4xNjQsMTQuMDAyLTMxLjE2NCwzMS4yNzVjMCwxLjIyNywwLjA5MiwyLjQzMSwwLjIyOSwzLjYyMSBjMy43Mi0xLjU3NCw3LjgwOC0yLjQ0NSwxMi4xLTIuNDQ1YzcuMDgxLDAsMTMuNjA3LDIuMzc0LDE4Ljg0LDYuMzY2YzAsMC0wLjAwMSwwLTAuMDAxLDAuMDAxIGM1LjIzMS0zLjk5MywxMS43NTUtNi4zNjcsMTguODMzLTYuMzY3YzQuMjUsMCw4LjMwMSwwLjg1NSwxMS45OTMsMi40MDJjMC4wNCwwLjAxNywwLjEyLDAuMDUxLDAuMTIsMC4wNTFsMC4wMTYtMC4wNzcgYzAsMCwwLjAxLTAuMDkzLDAuMDE1LTAuMTM5YzAuMTIyLTEuMTIxLDAuMTg0LTIuMjU5LDAuMTg0LTMuNDEyQzgxLjE2NCwxNC41MDIsNjcuMjEyLDAuNSw1MCwwLjV6Ii8+PHBhdGggZmlsbD0iIzJFMzA5MiIgZD0iTTYyLjMyOSw2NC4yMjVjMC0xLjIyNC0wLjA4Ni0yLjQzOC0wLjIyOS0zLjYzM2MtMy43MTYsMS41NzgtNy44MTMsMi40NTctMTIuMSwyLjQ1NyBzLTguMzc1LTAuODctMTIuMS0yLjQ0OGMtMC4xMzMsMS4xOTUtMC4yMjksMi40LTAuMjI5LDMuNjI0YzAsMTAuMTU0LDQuODQ5LDE5LjE2MSwxMi4zMjksMjQuODY5IEM1Ny40NzksODMuMzg2LDYyLjMyOSw3NC4zODksNjIuMzI5LDY0LjIyNXoiLz48cGF0aCBmaWxsPSIjMzYzNjM5IiBkPSJNNTAsMzkuMzU3Yy02LjU3NCw1LjAyLTExLjA5OSwxMi41ODMtMTIuMSwyMS4yNDVjMy43MjUsMS41NjgsNy44MTIsMi40NDgsMTIuMSwyLjQ0OCBzOC4zODQtMC44NywxMi4xLTIuNDQ4QzYxLjA5OSw1MS45MzksNTYuNTc0LDQ0LjM3Niw1MCwzOS4zNTd6Ii8+PC9zdmc+DQo=) no-repeat;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      text-indent: 100%;
+      margin: 0 em(3.5) 0 em(7);
+    }
+  }
+
+  .header_right { //Currently empty, will be adding things
+
+    padding-top: 20px;
+
+    @include media($medium-screen) {
+      @include span-columns(8);
+      @include omega();
+      padding: 0;
+    }
+
+  }
+
+}
+
+
+//Masthead styles (Would be @import '/drinks/masthead';)
+
+.masthead {
+  @include outer-container();
+  @include span-columns(12);
+  @include omega();
+  @include shift(0);
+
+  margin-top: em(20);
+
+  h2 {
+    font-weight: weight(regular);
+  }
+
+  h4 {
+    font-weight: weight(light);
+  }
+
+  .github {
+    @include ts-button($link, pop, false, 'github', left);
+    display:inline-block;
+    margin-top: em(10);
+  }
+
+}
+
+
+
+
