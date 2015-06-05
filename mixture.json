@@ -20,13 +20,15 @@
   "followLeader": true,
   "ignoreDir": [
     "ignore",
+    "inventory/recipes",
     "inventory/recipes/jquery/src",
     "inventory/recipes/bitters/spec",
     "inventory/recipes/chasers/test",
     "inventory/recipes/modernizr/test",
     "inventory/recipes/modernizr/feature-detects",
     "inventory/recipes/modernizr/grunt.js",
-    "inventory/recipes/modernizr/grunt.min.js"
+    "inventory/recipes/modernizr/grunt.min.js",
+    "inventory/recipes/fontawesome/scss/font-awesome.scss"
   ],
   "less": null,
   "lintScripts": false,

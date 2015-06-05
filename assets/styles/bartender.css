@@ -525,31 +525,42 @@ h6 {
   font-size: 1em; }
 
 /*
-Color variables are imported from another pen, just to make stuff easier to read
-*/
-/*
-=======================
-The Button Mixin.======
-=======================
+============================================================================================
+The Button Mixin  // Arguments: background-color, style, rounded-corners, icon, icon-position
+============================================================================================
+//Buttons improved by Quinton Burns from twitter.com/awesomephant sassy buttons
 
-//  BUTTON COMMENTS ARE STILL OLD, FROM THE CODEPEN. NEED TO UPDATE WITH NEW OPTIONS AND EXPLAIN ICONS
+- background-color ($bg):
+    Used as the base color for the background, font color and other colors are based off this
 
-=It takes 3 arguments:=
-- the background-color ($bg),
-in our case we will pass it the color vars we defined above.
+- available Button Styles ($style):
+    vanilla - default, slight fade on hover
+    outline - transparent center that fills on hover
+    pop - animated box-shadow out effect
+    raised - 3d bottom inner shadow that is covered on hover
+
+    [THE FOLLOWING STYLES BELOW CAN NOT USE ICONS]
+
+    center-out: lightened block begins from center and widens out on hover
+    fill-right: similar to outline, fills from left to right on hover
+
+- rounded corners ($rounded):
+    Valid values are "true" and "false"
 
 - the icon ($icon),
-takes one of the named icons from the Icon-Object™
+  takes one of the named icons from list inside /ingredients/_icons.scss
 
 - the icon position ($iconPosition)
-Vald values are 'left' and 'right'
+  Valid values are 'left' and 'right'
 
-=And does fancy stuff=
+
+- And how it works:
 1. Figure out the lightness of the passed background-color via the lightness() function and set either a dark or a light text color.
 
-2. Loop over the Icon-Object™ until the name matches the passed $icon parameter and then
+2. Determine which style you've asked for and apply it, check if you want rounded corners with that.
 
-  2.1 If $iconPosition == right select the :after element and set the corresponding unicode entity as the 'content' value.
+2. Loop over icon objects until we find our icon in the list and add it
+     (If $iconPosition == right, it will select the :after element and set the corresponding unicode entity as the 'content' value.)
 */
 /* CONFIGURABLES for Bourbon/Bitters/Neat
 
@@ -620,6 +631,19 @@ body, html {
 body {
   padding-top: 1.875em; }
 
+a:link {
+  color: #3094ea;
+  text-decoration: none; }
+
+a:visited {
+  color: #3094ea; }
+
+a:hover {
+  color: #1f70aa; }
+
+a:active {
+  color: #3094ea; }
+
 .psuedo_header {
   display: block; }
   .psuedo_header h5 {
@@ -680,7 +704,7 @@ body {
     font-weight: 400; }
   .masthead h4 {
     font-weight: 300; }
-  .masthead .github {
+  .masthead .github_button {
     padding: 1.2em 2.3em;
     border: none;
     /*
@@ -692,7 +716,7 @@ body {
     padding-left: 3.5em;
     color: white;
     display: inline-block;
-    background: #E74C3C;
+    background: #3094ea;
     -webkit-transition: .3s;
     -moz-transition: .3s;
     transition: .3s;
@@ -701,28 +725,45 @@ body {
     font-size: .8em;
     text-transform: uppercase;
     text-decoration: none;
-    border-bottom: .2em solid #e32f1c;
     position: relative;
+    padding: 1.2em 2.3em;
     display: inline-block;
     margin-top: 0.625em; }
-    .masthead .github:hover, .masthead .github:focus {
-      background: #e43725;
+    .masthead .github_button:hover, .masthead .github_button:focus {
+      background: #167fd9;
       color: white; }
-    .masthead .github:before {
+    .masthead .github_button:before {
       content: "\f09b";
       left: 1.5em; }
-    .masthead .github:before, .masthead .github:after {
+    .masthead .github_button:before, .masthead .github_button:after {
       display: inline-block;
       font-family: FontAwesome;
       position: absolute; }
-    .masthead .github:active {
-      -webkit-transform: scale(.92);
-      -moz-transform: scale(.92);
-      -ms-transform: scale(.92);
-      -o-transform: scale(.92);
-      transform: scale(.92); }
-    .masthead .github:hover, .masthead .github:focus {
-      box-shadow: 0 0 0 7px #f29f97; }
+    .masthead .github_button:before {
+      -webkit-transition: .35s;
+      -moz-transition: .35s;
+      transition: .35s;
+      content: '';
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      right: initial;
+      opacity: .2;
+      height: 100%;
+      background: white; }
+    .masthead .github_button:after {
+      content: ''; }
+    .masthead .github_button:active {
+      -webkit-transform: scale(.96);
+      -moz-transform: scale(.96);
+      -ms-transform: scale(.96);
+      -o-transform: scale(.96);
+      transform: scale(.96); }
+    .masthead .github_button:hover:before, .masthead .github_button:focus:before {
+      width: 100%;
+      left: 0; }
+    .masthead .github_button:hover:after, .masthead .github_button:focus:after {
+      content: ''; }
 
 /*
  USING REFILLS + INGREDIENTS

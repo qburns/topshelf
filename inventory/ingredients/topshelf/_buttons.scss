@@ -1,41 +1,52 @@
-//Sass buttons modified by Quinton Burns from http://codepen.io/awesomephant/pen/ALrsb
 
-/*
-Color variables are imported from another pen, just to make stuff easier to read
-*/
-
+//Import our icons ingredient (FontAwesome included by default - add your own there)
 @import 'icons';
 
 
 /*
-=======================
-The Button Mixin.======
-=======================
+============================================================================================
+The Button Mixin  // Arguments: background-color, style, rounded-corners, icon, icon-position
+============================================================================================
+//Buttons improved by Quinton Burns from twitter.com/awesomephant sassy buttons
 
-//  BUTTON COMMENTS ARE STILL OLD, FROM THE CODEPEN. NEED TO UPDATE WITH NEW OPTIONS AND EXPLAIN ICONS
+- background-color ($bg):
+    Used as the base color for the background, font color and other colors are based off this
 
-=It takes 3 arguments:=
-- the background-color ($bg),
-in our case we will pass it the color vars we defined above.
+- available Button Styles ($style):
+    vanilla - default, slight fade on hover
+    outline - transparent center that fills on hover
+    pop - animated box-shadow out effect
+    raised - 3d bottom inner shadow that is covered on hover
+
+    [THE FOLLOWING STYLES BELOW CAN NOT USE ICONS]
+
+    center-out: lightened block begins from center and widens out on hover
+    fill-right: similar to outline, fills from left to right on hover
+
+- rounded corners ($rounded):
+    Valid values are "true" and "false"
 
 - the icon ($icon),
-takes one of the named icons from the Icon-Object™
+  takes one of the named icons from list inside /ingredients/_icons.scss
 
 - the icon position ($iconPosition)
-Vald values are 'left' and 'right'
+  Valid values are 'left' and 'right'
 
-=And does fancy stuff=
+
+- And how it works:
 1. Figure out the lightness of the passed background-color via the lightness() function and set either a dark or a light text color.
 
-2. Loop over the Icon-Object™ until the name matches the passed $icon parameter and then
+2. Determine which style you've asked for and apply it, check if you want rounded corners with that.
 
-  2.1 If $iconPosition == right select the :after element and set the corresponding unicode entity as the 'content' value.
+2. Loop over icon objects until we find our icon in the list and add it
+     (If $iconPosition == right, it will select the :after element and set the corresponding unicode entity as the 'content' value.)
 */
 
-@mixin ts-button($bg, $style: vanilla, $rounded: false, $icon:none, $iconPosition: right){
+
+@mixin ts-button($bg, $style: vanilla, $rounded: false, $icon:none, $iconPosition: right) {
   $color: black;
   padding: 1.2em 2.3em;
-  border:none;
+  border: none;
 
   /*
   Setting the color based on the background, as described above (1)
@@ -46,11 +57,10 @@ Vald values are 'left' and 'right'
       background: darken($bg, 5);
       color: darken($color, 5);
     }
-  }
-  @else {
+  } @else {
     $color: lighten($bg, 45);
     &:hover, &:focus {
-      background: darken($bg, 5);
+      background: darken($bg, 8.5);
       color: lighten($color, 5);
     }
   }
@@ -59,8 +69,7 @@ Vald values are 'left' and 'right'
   Adding the icons, see (2)
   */
 
-
-  @each $thing in $icons{
+  @each $thing in $icons {
     @if nth($thing, 1) == $icon {
       @if $iconPosition == right {
         padding-right: 3.5em;
@@ -82,46 +91,148 @@ Vald values are 'left' and 'right'
 
   @if $style == outline {
     color: $bg;
-  } @else {  color: $color;}
+  } @else {
+    color: $color;
+  }
   display: inline-block;
   @if $style == outline {
     background: transparent;
-  } @else {background: $bg;}
+  } @else {
+    background: $bg;
+  }
 
   @include transition(.3s);
-  font:{
+  font: {
     family: $sans-serif;
     weight: 800;
     size: .8em;
   }
-  text:{
+  text: {
     transform: uppercase;
     decoration: none;
   }
-  @if $rounded == true {border-radius: .7em};
+  @if $rounded == true {
+    border-radius: .6em;
+  }
+;
   @if $style == pop {
     border-bottom: .2em solid darken($bg, 7)
-  } @else if $style == outline {border: .2em solid darken($bg, 7)
-  };
+  } @else if $style == outline {
+    border: .16em solid darken($bg, 7)
+  }
+
+  @if $style == raised {
+    box-shadow: inset 0 1px 0 $bg, inset 0px -0.43em 0px 0px darken($bg, 20);
+    @include transition(.6s);
+  }
 
   position: relative;
 
-  &:before, &:after{
+  &:before, &:after {
     display: inline-block;
     font-family: $iconset;
     position: absolute;
   }
 
+      @if $style == center-out {
+
+        padding: 1.2em 2.3em;
+
+        &:before {
+          @include transition(.35s);
+          content: '';
+          width: 0;
+          left: 50%;
+          bottom: 0;
+          right: initial;
+          opacity: .2;
+          height: 100%;
+          background: lighten($bg, 90%);
+          @if $rounded == true {
+            border-radius: .5em;
+          }
+        }
+
+        &:after {
+          content: '';
+        }
+      }
+
+
+        @if $style == fill-right {
+
+          padding:1.2em 2.3em;
+          color: $bg;
+          background: transparent;
+          border: .16em solid darken($bg, 7);
+
+          &:before {
+            @include transition(.45s);
+            content: '';
+            width: 0;
+            left: 0%;
+            bottom: 0;
+            right: initial;
+            height: 100%;
+            background: $bg;
+            opacity:.35;
+            @if $rounded == true {
+              border-radius: .4em;
+            }
+          }
+
+
+          &:after {
+            content:'';
+          }
+
+
+
+        }
+
   &:active {
-    @include transform(scale(.92));
+    @include transform(scale(.96));
   }
   &:hover, &:focus {
-    @if $rounded == true {border-radius: .5em;}
-    @if $style == pop { box-shadow: 0 0 0 7px lighten($bg, 20)};
+    @if $rounded == true {
+      border-radius: .5em;
+    }
+    @if $style == pop {
+      box-shadow: 0 0 0 7px lighten($bg, 20)
+    }
+  ;
+    @if $style == raised {
+      box-shadow: 0 0 0 0;
+    }
+
+    @if $style == center-out {
+
+      &:before {
+        width: 100%;
+        left: 0;
+      }
+
+      &:after {
+        content:'';
+      }
+
+    }
+
+    @if $style == fill-right {
+      color: darken($bg, 40);
+      background: transparent;
+      &:before {
+        width: 100%;
+        left: 0;
+      }
+
+      &:after {
+        content:'';
+      }
+
+
+    }
   }
 }
 
 
-%button {
-  font-size: $base-font-size;
-}

@@ -6,10 +6,25 @@
 
 $visual-grid: true;
 
-//Would be in _structure.scss
+//Below would be in _structure.scss
 body {
   padding-top: em(30);
 }
+
+//Below would be in _ambiance.scss
+
+$blue-shade-1: #1A6192;
+$blue-shade-2: #0F3752;
+$blue-shade-3: #1f70aa;
+$blue-shade-4: #3094ea;
+$blue-shade-5: #2facff;
+
+$link: $blue-shade-4;
+$hover: $blue-shade-3;
+a:link { color:$link; text-decoration: none; }
+a:visited {color:$link;}
+a:hover {color:$hover;}
+a:active {color:$link;}
 
 
 //Header styles (Would be @import '/ingredients/header';)
@@ -71,8 +86,8 @@ body {
     font-weight: weight(light);
   }
 
-  .github {
-    @include ts-button($link, pop, false, 'github', left);
+  .github_button {
+    @include ts-button($blue-shade-4, center-out, false, 'github', left);
     display:inline-block;
     margin-top: em(10);
   }
