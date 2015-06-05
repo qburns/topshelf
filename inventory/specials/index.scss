@@ -72,14 +72,29 @@ a:active {color:$link;}
 
 .masthead {
   @include outer-container();
-  @include span-columns(12);
+  @include span-columns(6);
   @include omega();
-  @include shift(0);
+  @include shift(3);
 
   margin-top: em(20);
 
   h2 {
-    font-weight: weight(regular);
+    font-weight: weight(thin);
+    font-size: 5rem;
+    margin-bottom: em(4);
+
+
+    a {
+      @include ts-button($blue-shade-4, outline, false, '', left);
+      @include padding-v(.6em);
+
+      vertical-align: middle;
+      margin-left: em(25);
+      font-weight: weight(light);
+      font-size: 0.7rem;
+      letter-spacing: em(1.2);
+    }
+
   }
 
   h4 {
