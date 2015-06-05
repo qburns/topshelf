@@ -26,7 +26,6 @@ a:visited {color:$link;}
 a:hover {color:$hover;}
 a:active {color:$link;}
 
-
 //Header styles (Would be @import '/ingredients/header';)
 .psuedo_header {
 
@@ -70,18 +69,31 @@ a:active {color:$link;}
 
 //Masthead styles (Would be @import '/ingredients/masthead';)
 
+@import "../recipes/refills/textures";
+
 .masthead {
-  @include outer-container();
-  @include span-columns(6);
-  @include omega();
-  @include shift(3);
+
+  $texture-top-background: lighten(#ddf0ef, 1%);
+  $texture-bottom-background: darken(#ddf0ef, 10%);
+
+  @include span-columns(12);
+  @include texture(180deg, $texture-top-background, $texture-bottom-background, 67, 1);
 
   margin-top: em(20);
+  
+  .inner {
 
-  h2 {
+    @include span-columns(6);
+    @include shift(3);
+    display:inline-block;
+
+  }
+
+  h1 {
     font-weight: weight(thin);
     font-size: 5rem;
     margin-bottom: em(4);
+    letter-spacing: em(.75);
 
 
     a {
@@ -102,7 +114,7 @@ a:active {color:$link;}
   }
 
   .github_button {
-    @include ts-button($blue-shade-4, center-out, false, 'github', left);
+    @include ts-button($blue-shade-4, vanilla, false, 'github', left);
     display:inline-block;
     margin-top: em(10);
   }

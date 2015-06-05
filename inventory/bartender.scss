@@ -45,7 +45,7 @@ ingredients/topshelf/_grid-setup.scss - grid settings override
 Ingredients is our folder for additional (non boilerplate-required) styles. Refills by Thoughtbot is included in this folder.
 To use universally, uncomment / add line to ingredients/topshelf/_topshelf.scss
 
- [  Or you can use it in individual page styles (inventory/rooms/)
-      EX: @import "../recipes/refills/_accordion.scss"  ]
+ [  Or you can use it in individual page/element styles
+      EX: @import "../recipes/refills/accordion"  ]
 
 */
