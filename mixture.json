@@ -20,6 +20,7 @@
   "followLeader": true,
   "ignoreDir": [
     "ignore",
+    "inventory",
     "inventory/recipes",
     "inventory/recipes/jquery/src",
     "inventory/recipes/bitters/spec",
@@ -37,7 +38,8 @@
   "optimiseSVG": true,
   "password": null,
   "preprocessorLocations": [
-    "inventory"
+    "inventory",
+    "assets"
   ],
   "preprocessorScriptOutput": "assets/scripts",
   "preprocessorStyleOutput": "assets/styles",
