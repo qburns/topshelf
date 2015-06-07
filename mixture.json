@@ -9,7 +9,6 @@
   },
   "convertHtml": {
     "extension": ".html",
-    "path": "",
     "relativePaths": true
   },
   "customRuby": false,
@@ -20,7 +19,6 @@
   "followLeader": true,
   "ignoreDir": [
     "ignore",
-    "inventory",
     "inventory/recipes",
     "inventory/recipes/jquery/src",
     "inventory/recipes/bitters/spec",
@@ -50,7 +48,7 @@
   "routes": null,
   "sass": {
     "outputStyle": "nested",
-    "useLibSass": true
+    "useLibSass": false
   },
   "serverHostname": null,
   "serverPort": null,
