@@ -25,6 +25,12 @@
 //Bitters has removed header sizing from their typography page, adding it back. Comment out if you want them all to be base size.
 @import "header_sizing";
 
+//Center mixin (@include center($horizontal: true, $vertical: true);
+@import "center_elements";
+
+//Default padding mixin
+@import "outer_pad";
+
 // Buttons - Bitters is deprecating buttons in their next release, I've got a much more powerful mixin included below
 @import "buttons";
 

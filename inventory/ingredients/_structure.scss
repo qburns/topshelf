@@ -20,10 +20,12 @@ body, html {
 
 #wrapper {
   @include outer-container(); //Make sure you include the #wrapper on your page to throw that thing on a grid
-}
 
+  //If you want your padding to be the same as the gutter %, you can use padding: flex-gutter();
+
+}
 
 .container {
   @include span-columns(12);
+  @include outer-pad();
 }
-
