@@ -1,18 +1,22 @@
 // This file includes an example page utilizing some of the things included in this boilerplate. Delete this file or reuse it, your choice :)
 // Normally, a lot of these styles like the header would be used in partial _example.scss files and imported to your main sheet
-// but I don't want to force you to delete a bunch of bullshit to get started. Code cleanly and seperate your stuff.
+// but I don't want to force you to delete a bunch of bullshit to get started. Code cleanly and separate your stuff.
 
 // TODO: Delete this default example scss sheet and make your own magic happen
 
-$visual-grid: true;
 
-//Below would be in _structure.scss
-body {
-  padding-top: em(30);
+/* ===================================
+  Below would be in _structure.scss
+===================================*/
+
+.container {
+  //Using a garnish mixin for media + easy padding
 }
 
-//Below would be in _ambiance.scss
 
+/* ===================================
+  Below would be in _ambiance.scss
+=================================== */
 $blue-shade-1: #1A6192;
 $blue-shade-2: #0F3752;
 $blue-shade-3: #1f70aa;
@@ -26,18 +30,27 @@ a:visited {color:$link;}
 a:hover {color:$hover;}
 a:active {color:$link;}
 
-//Header styles (Would be @import '/ingredients/header';)
+
+/* ====================================================
+  Header styles (Would be @import '/ingredients/header';)
+=====================================================*/
 .psuedo_header {
 
-  display:block;
+  @include span-columns(12);
+  @include margin-v( modular-scale(0) );
+
+  display:inline-block;
 
   h5 {
-    display: inline-block;
-    font-weight: weight(light); //using Garnish mixin for font weights
-    line-height: 240%;
+    @include span-columns(12);
 
+    display: inline-block;
+    font-weight: weight(thin); //using Garnish mixin for font weights
+    letter-spacing: em(.5);
+    font-size:1.3em;
+    color:#000;
     @include media($medium-screen) {
-      @include span-columns(4);
+      @include span-columns(8);
     }
 
     div {
@@ -47,9 +60,11 @@ a:active {color:$link;}
       display: inline-block;
       background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSIjMDBBRUYwIiBkPSJNMTAwLDY0LjIyNUMxMDAsODEuNDkzLDg2LjA0Miw5NS41LDY4LjgzNiw5NS41UzM3LjY3MSw4MS40OTMsMzcuNjcxLDY0LjIyNXMxMy45NTgtMzEuMjc1LDMxLjE2NC0zMS4yNzUgQzg2LjA0MiwzMi45NTEsMTAwLDQ2Ljk1OCwxMDAsNjQuMjI1eiIvPjxwYXRoIGZpbGw9IiMwMEE2NTEiIGQ9Ik0zNy44ODcsNjAuNTk5YzMuNzI0LDEuNTc4LDcuODE3LDIuNDUxLDEyLjExMywyLjQ1MWMxNS45ODgsMCwyOS4xNTYtMTIuMDg0LDMwLjk0OS0yNy42NDYgYy0zLjcyNC0xLjU3OS03LjgxNy0yLjQ1Mi0xMi4xMTMtMi40NTJDNTIuODUyLDMyLjk1MSwzOS42OCw0NS4wMzksMzcuODg3LDYwLjU5OXoiLz48cGF0aCBmaWxsPSIjRUQxQzI0IiBkPSJNMzEuMTY0LDMyLjk1MWMtNC4yOTEsMC04LjM3OSwwLjg3MS0xMi4xLDIuNDQ1YzEuMzAzLDExLjMxNiw4LjYwMywyMC43OTgsMTguNjQ3LDI1LjEyOCBjMC4wMzMsMC4wMTQsMC4wOTgsMC4wNDIsMC4wOTgsMC4wNDJsMC4wNzcsMC4wMzNjMCwwLDAuMDA2LTAuMDU1LDAuMDEtMC4wODNjMS4wMTgtOC42MzUsNS41NDYtMTYuMTkxLDEyLjEwOC0yMS4xOTkgQzQ0Ljc3MSwzNS4zMjQsMzguMjQ1LDMyLjk1MSwzMS4xNjQsMzIuOTUxeiIvPjxwYXRoIGZpbGw9IiNFQzAwOEMiIGQ9Ik0zNy42NzIsNjQuMjI1YzAtMS4yNzMsMC4wODUtMi41MjUsMC4yMzItMy43NThjLTAuMDAyLDAuMDE2LTAuMDA1LDAuMDMyLTAuMDA3LDAuMDQ4IGMtMC4wMDMsMC4wMjgtMC4wMSwwLjA4My0wLjAxLDAuMDgzbC0wLjA3Ny0wLjAzM2MwLDAtMC4wNjUtMC4wMjgtMC4wOTgtMC4wNDJjLTEwLjA0NS00LjMzLTE3LjM0NS0xMy44MTItMTguNjQ3LTI1LjEyOCBDNy44NjMsNDAuMTM3LDAsNTEuMjU5LDAsNjQuMjI1QzAsODEuNDk4LDEzLjk1Myw5NS41LDMxLjE2NCw5NS41YzcuMDgsMCwxMy42MDUtMi4zNzMsMTguODM4LTYuMzY0IEM0Mi41MTIsODMuNDIzLDM3LjY3Miw3NC4zOTEsMzcuNjcyLDY0LjIyNXoiLz48cGF0aCBmaWxsPSIjRkZGMjAwIiBkPSJNNTAsMC41Yy0xNy4yMTIsMC0zMS4xNjQsMTQuMDAyLTMxLjE2NCwzMS4yNzVjMCwxLjIyNywwLjA5MiwyLjQzMSwwLjIyOSwzLjYyMSBjMy43Mi0xLjU3NCw3LjgwOC0yLjQ0NSwxMi4xLTIuNDQ1YzcuMDgxLDAsMTMuNjA3LDIuMzc0LDE4Ljg0LDYuMzY2YzAsMC0wLjAwMSwwLTAuMDAxLDAuMDAxIGM1LjIzMS0zLjk5MywxMS43NTUtNi4zNjcsMTguODMzLTYuMzY3YzQuMjUsMCw4LjMwMSwwLjg1NSwxMS45OTMsMi40MDJjMC4wNCwwLjAxNywwLjEyLDAuMDUxLDAuMTIsMC4wNTFsMC4wMTYtMC4wNzcgYzAsMCwwLjAxLTAuMDkzLDAuMDE1LTAuMTM5YzAuMTIyLTEuMTIxLDAuMTg0LTIuMjU5LDAuMTg0LTMuNDEyQzgxLjE2NCwxNC41MDIsNjcuMjEyLDAuNSw1MCwwLjV6Ii8+PHBhdGggZmlsbD0iIzJFMzA5MiIgZD0iTTYyLjMyOSw2NC4yMjVjMC0xLjIyNC0wLjA4Ni0yLjQzOC0wLjIyOS0zLjYzM2MtMy43MTYsMS41NzgtNy44MTMsMi40NTctMTIuMSwyLjQ1NyBzLTguMzc1LTAuODctMTIuMS0yLjQ0OGMtMC4xMzMsMS4xOTUtMC4yMjksMi40LTAuMjI5LDMuNjI0YzAsMTAuMTU0LDQuODQ5LDE5LjE2MSwxMi4zMjksMjQuODY5IEM1Ny40NzksODMuMzg2LDYyLjMyOSw3NC4zODksNjIuMzI5LDY0LjIyNXoiLz48cGF0aCBmaWxsPSIjMzYzNjM5IiBkPSJNNTAsMzkuMzU3Yy02LjU3NCw1LjAyLTExLjA5OSwxMi41ODMtMTIuMSwyMS4yNDVjMy43MjUsMS41NjgsNy44MTIsMi40NDgsMTIuMSwyLjQ0OCBzOC4zODQtMC44NywxMi4xLTIuNDQ4QzYxLjA5OSw1MS45MzksNTYuNTc0LDQ0LjM3Niw1MCwzOS4zNTd6Ii8+PC9zdmc+DQo=) no-repeat;
       background-repeat: no-repeat;
+      background-position: center top;
       overflow: hidden;
-      text-indent: 100%;
-      margin: 0 em(3.5) 0 em(7);
+      margin-left: em(3);
+      vertical-align: middle;
+
     }
   }
 
@@ -67,59 +82,125 @@ a:active {color:$link;}
 
 }
 
-//Masthead styles (Would be @import '/ingredients/masthead';)
 
+/*===========================================================
+  Masthead styles (Would be @import '/ingredients/masthead')
+=============================================================*/
 @import "../recipes/refills/textures";
+
+.masthead-grad {
+  @include span-columns(12);
+  background-image: linear-gradient(180deg, transparent 0%, rgba(200,200,200,0.1) 100%);
+}
+
 
 .masthead {
 
-  $texture-top-background: lighten(#ddf0ef, 1%);
-  $texture-bottom-background: darken(#ddf0ef, 10%);
+    @include outer-container();
+    text-align:center;
 
-  @include span-columns(12);
-  @include texture(180deg, $texture-top-background, $texture-bottom-background, 67, 1);
-
-  margin-top: em(20);
-  
-  .inner {
-
-    @include span-columns(6);
-    @include shift(3);
+  .container {
     display:inline-block;
-
   }
 
   h1 {
+
+
     font-weight: weight(thin);
-    font-size: 5rem;
-    margin-bottom: em(4);
+    font-size: 3.5em;
     letter-spacing: em(.75);
+
+    @include media($medium-screen-up) {
+      @include span-columns(12);
+      @include omega();
+      font-size: 4em;
+    }
 
 
     a {
       @include ts-button($blue-shade-4, outline, false, '', left);
       @include padding-v(.6em);
 
-      vertical-align: middle;
-      margin-left: em(25);
+      @include media($small-screen) {
+        @include span-columns(12);
+        margin-top: modular-scale(0);
+        vertical-align: top;
+        display:block;
+      }
+
       font-weight: weight(light);
       font-size: 0.7rem;
       letter-spacing: em(1.2);
+
+      @include media($medium-screen-up) {
+        margin: 0 0 0 em(25);
+        vertical-align: middle;
+      }
+
+
+    }
+
+
+  }
+
+  h2 {
+    @include span-columns(12);
+    @include omega();
+
+    margin: modular-scale(0) 0 modular-scale(1) 0;
+    display:block;
+
+    color:#333;
+    font-weight: weight(light);
+    font-size: 1.1em;
+
+    @include media($small-screen) {
+      letter-spacing: em(1);
+    }
+
+    @include media($medium-screen-up) {
+      font-weight: weight(thin);
+      font-size: 1.7em;
     }
 
   }
 
-  h4 {
-    font-weight: weight(light);
-  }
-
   .github_button {
-    @include ts-button($blue-shade-4, vanilla, false, 'github', left);
-    display:inline-block;
-    margin-top: em(10);
+    @include ts-button($blue-shade-4, pop, false, 'github', left);
+    margin-bottom: modular-scale(3);
+
   }
 
 }
+
+
+/*===============================================================================
+  Three Column Top (Would be something like @import '/specials/home/three_icon')
+================================================================================*/
+
+.three_icon {
+  @include span-columns(12);
+
+  .one {
+    @include insert-icon('user', after);
+  }
+
+  .one {
+    @include insert-icon('user', after);
+  }
+
+  .one {
+    @include insert-icon('user', after);
+  }
+
+
+
+}
+
+
+
+
+
 
 
 
