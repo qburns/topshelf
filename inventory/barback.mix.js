@@ -1,13 +1,6 @@
 // =============================================================================
-// ADD YOUR CUSTOM SCRIPTS AFTER THE "MARKER LINE" BELOW IN THIS FILE !!!
+// ADD YOUR GLOBAL SCRIPTS TO THIS FILE TO COMBINE / REDUCE HTTP REQUESTS
 // =============================================================================
-
-// Nulla vitae elit libero, a pharetra augue.
-// @import "foo/bar";
-
-// MARKER LINE --> /////////////////////////////////////////////////////////////
-
-
 
 //Combine all our scripts into one file
 @import "recipes/jquery/dist/jquery.js";
