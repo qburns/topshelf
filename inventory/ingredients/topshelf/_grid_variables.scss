@@ -1,23 +1,51 @@
 @import "../../recipes/neat/app/assets/stylesheets/neat-helpers";
 
-// Neat Overrides
+// Neat Overrides Available (default)
 // $column: 90px;
 // $gutter: 30px;
 // $grid-columns: 12;
 // $max-width: em(1088);
 
-//Breakpoint sizes
-$small-size:em(320);
-$medium-size:em(600);
-$large-size:em(1000);
+// ------------------------------------------------------------
+// Topshelf Default Neat grid settings
+// ------------------------------------------------------------
 
-//Override neat default max width
-$max-width: em(1000);
+
+$max-width: em(1000); //Override neat default max width
+
+$column: modular-scale(2, 1em); // Column width
+$gutter: modular-scale(2, 1em); // Gutter between each two columns
+
+$fg-column: $column;
+$fg-gutter: $gutter;
+
+//Breakpoint sizes - We use pixels here to help out Garnish's mixins.
+$small-size: 320;
+$medium-size: 600;
+$large-size: 1000;
 
 // Bourbon Neat Breakpoints
-$small-screen: new-breakpoint(min-width $small-size);
-$medium-screen: new-breakpoint(min-width $medium-size);
-$large-screen: new-breakpoint(min-width $large-size);
+$small-screen: new-breakpoint(max-width em($medium-size - 1));
+$medium-screen: new-breakpoint(min-width em($medium-size) max-width em($large-size - 1));
+$medium-screen-up: new-breakpoint(min-width em($medium-size));
+$large-screen: new-breakpoint(min-width em($large-size));
 
-//Garnish is also included by default, so you can use it to generate simple grids with custom gutters
+
+//Garnish is also included by default, so you can use it to generate simple grids with custom gutters and some other cool things
 //Check out the README in the recipes/garnish folder or visit https://github.com/paulozoom/garnish
+
+
+/*
+You have two ways to do mobile-first development with neat.
+
+You can read more about it in detail in /inventory/recipes/neat/README. I heavily suggest that, it makes a lot of sense.
+
+Once you've read that, know that I've included Chasers which has omega-reset() built in. If you go that route, it will work fine.
+
+Otherwise you can use the media-query splitting technique, which is what is default above. Feel free to replace them with your own queries.
+
+Garnish includes some helpers to make queries easier. Read the README inside /inventory/recipes/garnish for full docs.
+
+Choose whatever style works best for you / your team / your project / use both when it makes sense.
+
+*/
