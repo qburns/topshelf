@@ -1,0 +1,10 @@
+//Default outer padding so that you always have some sort of padding around your page
+
+
+@mixin outer-pad {
+  @include padding-h( flex-gutter() * 2 ); //Flex-gutter() sets same value as your gutter
+
+  @include media($medium-screen-up) {
+    @include padding-h( flex-gutter() ); //Flex-gutter() sets same value as your gutter
+  }
+}

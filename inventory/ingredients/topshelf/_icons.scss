@@ -8,6 +8,10 @@ $fa-font-path: "../../recipes/fontawesome/fonts";
 //    for example: ('name' '\1ABC' 'myiconset'); -- this will be set as the font-family value.
 $iconset: FontAwesome;
 
+
+//Icons can be used in button mixin or used to insert icon into a pseudo element
+//EX: @include insert-icon('ambulance', before);
+
 $icons: ("adjust" "\f042" $iconset),
 ("adn" "\f170" $iconset),
 ("align-center" "\f037" $iconset),
@@ -601,3 +605,36 @@ $icons: ("adjust" "\f042" $iconset),
 ("youtube" "\f167" $iconset),
 ("youtube-play" "\f16a" $iconset),
 ("youtube-square" "\f166" $iconset);
+
+@mixin insert-icon ($icon: none, $pseudo: before) {
+
+  @each $thing in $icons {
+    @if nth($thing, 1) == $icon {
+
+      position: relative;
+
+      &:before, &:after {
+        position: absolute;
+        top:0;
+        left:0;
+        font-family: nth($thing, 3);
+      }
+
+      @if $pseudo == before {
+        &:before {
+          content: nth($thing, 2);
+        }
+      }
+
+      @else if $pseudo == after {
+        &:after {
+          content: nth($thing, 2);
+        }
+    }
+
+
+    }
+
+  }
+
+}
