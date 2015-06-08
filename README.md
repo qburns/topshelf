@@ -14,12 +14,15 @@ USING TOPSHELF
 TopShelf is built for use with [Mixture.io](http://mixture.io) first and foremost. If you're planning on using it with Mixture as intended, clone the repository and you'll be ready to get to work. There are a few TODOs included to get yourself started.
 
 **Debug Mode is turned on by default**
+
     Debug mode will use your unminified assets during testing and will leave comments intact. You can disable this by turning "debug" from true to false inside "mixture.json" in the project root.
 
  **Are you on Windows?**
+ 
     Mixture as of this writing has libsass disabled in Windows. It's enabled by default in this project(simply because it's faster), but can be disabled by changing "uselibsass" from true to false inside "mixture.json" in the project root.
 
 **Looking to use Topshelf without Mixture?**
+
     If you're looking to use this boilerplate without Mixture(like with Grunt/Gulp/Yeoman etc), you can certainly do so. You'll need to remove the ".mix" specific JS file inside inventory and bring your own HTML/templates. You can continue to use the Liquid templating system, but you'll need to have a plugin for that inside your preprocessor file. You'll get all the benefits of the Bourbon.io stack, as well as all the TopShelf goodies.
 
 ### 1b. What's included?
@@ -72,19 +75,19 @@ TopShelf tries to maintain a clean base file structure. All your finished, produ
 
 **/inventory/**
 
-    Inventory is the folder where all of the CSS, SASS, and JS files reside. This folder contain all of our recipes, ingredients and specials are found, which you'll read about in a minute.
+Inventory is the folder where all of the CSS, SASS, and JS files reside. This folder contain all of our recipes, ingredients and specials are found, which you'll read about in a minute.
 
 **/menu/**
 
-    Pages, templates and layouts are stored here. These files are "on the menu" for Mixture to use.
+Pages, templates and layouts are stored here. These files are "on the menu" for Mixture to use.
 
 **/models/**
 
-    Models contains json files that the Liquid templating system uses. These files can contain data we use throughout the site in powerful ways.
+Models contains json files that the Liquid templating system uses. These files can contain data we use throughout the site in powerful ways.
 
 **/assets/**
 
-    This folder will be initially empty of any real files when you download the boilerplate. Mixture will automatically fill this folder with your combined css files, combined javascript files and include their minified versions as well. All images should also be placed in the images folder inside assets.
+This folder will be initially empty of any real files when you download the boilerplate. Mixture will automatically fill this folder with your combined css files, combined javascript files and include their minified versions as well. All images should also be placed in the images folder inside assets.
 
 #### 2b. Topshelf Nomenclature
 
@@ -92,23 +95,23 @@ TopShelf uses some bar related terms for our file/folder structures that I find 
 
 /inventory/**recipes/**
 
-    All good drinks start with a recipe, and with TopShelf, it's no different. We include all of our bower-ready components in this file and import them later.
+All good drinks start with a recipe, and with TopShelf, it's no different. We include all of our bower-ready components in this file and import them later.
 
 /inventory/**ingredients/**
 
-    Ingredients are what give our site style and flavor. Topshelf's extras, as well as site branding_(_ambiance.scss)_ and grid/structure are included here. You should place any widely used component styles in their own files/folders here, like _/ingredients/_navigation.scss._
+Ingredients are what give our site style and flavor. Topshelf's extras, as well as site branding_(_ambiance.scss)_ and grid/structure are included here. You should place any widely used component styles in their own files/folders here, like _/ingredients/_navigation.scss._
 
 /inventory/**specials/**
 
-    Specials are where we store our page specific styles / page specific components.
+Specials are where we store our page specific styles / page specific components.
 
 /inventory/**bartender.scss**
 
-    The bartender.scss file is responsible for mixing all of our recipes, ingredients and specials together and making a final product. We import Bourbon, Neat, Biters and all of our extras here first. Then we setup our grid, pass in our ambiance / structure files. This will be generated into _/assets/bartender.css_. Feel free to rename for your project.
+The bartender.scss file is responsible for mixing all of our recipes, ingredients and specials together and making a final product. We import Bourbon, Neat, Biters and all of our extras here first. Then we setup our grid, pass in our ambiance / structure files. This will be generated into _/assets/bartender.css_. Feel free to rename for your project.
 
 /inventory/**barback.mix.js**
 
-    This special .mix file allows us to import multiple JS files into one finalized JS file to reduce HTTP requests / clutter. By default, jQuery and Modernizr are combined. Feel free to rename for your project.
+This special .mix file allows us to import multiple JS files into one finalized JS file to reduce HTTP requests / clutter. By default, jQuery and Modernizr are combined. Feel free to rename for your project.
 
 Still having trouble? [Submit an issue](https://github.com/qburns/topshelf/issues) on github and I'll try to help.
 
