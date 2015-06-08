@@ -2,9 +2,5 @@
 
 
 @mixin outer-pad {
-  @include padding-h( flex-gutter() * 2 ); //Flex-gutter() sets same value as your gutter
-
-  @include media($medium-screen-up) {
-    @include padding-h( flex-gutter() ); //Flex-gutter() sets same value as your gutter
-  }
+  @include padding-h( flex-gutter() ); //Flex-gutter() sets same value as your gutter
 }

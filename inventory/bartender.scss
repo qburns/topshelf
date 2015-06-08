@@ -1,28 +1,17 @@
 
-
 // Import resets
 @import "recipes/normalize-scss/normalize";
 
 // Bring on the Bourbon, Neat, Bitters, Chasers, and Garnish it
 @import "recipes/bourbon/app/assets/stylesheets/bourbon";
 @import "recipes/neat/app/assets/stylesheets/neat";
-@import "ingredients/topshelf/topshelf"; //Top Shelf is where we import Bitters and Grid Setup. Refills can also be enabled.
+@import "ingredients/topshelf/topshelf"; //Top Shelf is where we import Bitters and Grid Variables. Refills can also be enabled for global use here.
 @import "recipes/chasers/src/chasers";
 @import "recipes/garnish/src/garnish";
 
-/* CONFIGURABLES for Bourbon/Bitters/Neat
-
-bourbon/settings/_prefixer.scss - choose which
-bourbon/settings/_px-to-em.scss - set other than 16
-bourbon/addons/_font-family.scss - font families
-
-bitters/_variables.scss - colors and type
-ingredients/topshelf/_topshelf.scss - where we import bitters
-
-
+/* CONFIGURABLES:
 neat/settings/_visual-grid.scss - visual grid appearance & on/off
-ingredients/topshelf/_grid-setup.scss - grid settings override
-
+ingredients/topshelf/_grid_variables.scss - grid settings override
 */
 
 
@@ -35,8 +24,6 @@ ingredients/topshelf/_grid-setup.scss - grid settings override
 
 // Import Specials - our individual page styles;
 @import "specials/index";
-
-
 
 
 /*
