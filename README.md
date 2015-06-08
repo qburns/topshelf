@@ -4,7 +4,7 @@ TopShelf is Bourbon, Neat, Bitters & extras, chilled with Normalize, jQuery & Mo
 
 ## USING TOPSHELF
 
-1.  #### 1. Before You Begin
+#### 1. Before You Begin
 
     #### 1a. General Info
 
