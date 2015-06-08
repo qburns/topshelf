@@ -19,15 +19,17 @@
   "followLeader": true,
   "ignoreDir": [
     "ignore",
-    "inventory/recipes",
-    "inventory/recipes/jquery/src",
-    "inventory/recipes/bitters/spec",
-    "inventory/recipes/chasers/test",
-    "inventory/recipes/modernizr/test",
-    "inventory/recipes/modernizr/feature-detects",
-    "inventory/recipes/modernizr/grunt.js",
-    "inventory/recipes/modernizr/grunt.min.js",
-    "inventory/recipes/fontawesome/scss/font-awesome.scss"
+    "inventory/recipes/bourbon",
+    "inventory/recipes/neat",
+    "inventory/recipes/bitters",
+    "inventory/recipes/garnish",
+    "inventory/recipes/chasers",
+    "inventory/recipes/normalize-scss",
+    "inventory/recipes/jquery",
+    "inventory/recipes/modernizr",
+    "inventory/recipes/fontawesome/css",
+    "inventory/recipes/fontawesome/scss",
+    "inventory/recipes/fontawesome/less"
   ],
   "less": null,
   "lintScripts": false,
@@ -48,7 +50,7 @@
   "routes": null,
   "sass": {
     "outputStyle": "nested",
-    "useLibSass": true
+    "useLibSass": false
   },
   "serverHostname": null,
   "serverPort": null,
