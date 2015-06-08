@@ -61,7 +61,7 @@ A package manager for the web
 
 #### The usuals:
 
-All your favorites are included. That means [normalize.css,](http://necolas.github.io/normalize.css/) [jQuery,](http://jquery.com) [modernizr,](http://modernizr.com/) [FontAwesome(as a mixin!), and](http://fortawesome.github.io/Font-Awesome/) [html5boilerplate](https://html5boilerplate.com/) are all included to give you the ultimate starter toolkit.
+All your favorites are included. That means [normalize.css,](http://necolas.github.io/normalize.css/) [jQuery,](http://jquery.com) [modernizr,](http://modernizr.com/) [FontAwesome(as a mixin!)](http://fortawesome.github.io/Font-Awesome/), and [html5boilerplate](https://html5boilerplate.com/) are all included to give you the ultimate starter toolkit.
 
 #### TopShelf Extras:
 
@@ -71,23 +71,23 @@ Don't bother including a giant stylesheet just to be able to call easy to rememb
 
 #### 2a. Root Folders
 
-TopShelf tries to maintain a clean base file structure. All your finished, production ready code is placed into /assets/ by Mixture, while all your work in progress / uncombined files reside in /inventory/ before Mixture uses them.
+TopShelf tries to maintain a clean base file structure. All your finished, production ready code is placed into /assets/ by Mixture, while all your work in progress / uncombined files reside in /inventory.
 
 **/inventory/**
 
-Inventory is the folder where all of the CSS, SASS, and JS files reside. This folder contain all of our recipes, ingredients and specials are found, which you'll read about in a minute.
+Inventory is the folder where all of the CSS, SASS, and JS files reside. This folder contains all of our recipes, ingredients and specials, all of which you'll read about in a minute.
 
 **/menu/**
 
-Pages, templates and layouts are stored here. These files are "on the menu" for Mixture to use.
+Pages, templates and layouts are stored here. These files are the pages/layouts "on the menu" for Mixture to serve up to the user.
 
 **/models/**
 
-Models contains json files that the Liquid templating system uses. These files can contain data we use throughout the site in powerful ways.
+The models folder contains json files that contain data that is stored for use by the Liquid templating system that Mixture uses by default. The data inside these files can be used in extremely powerful and robust ways.
 
 **/assets/**
 
-This folder will be initially empty of any real files when you download the boilerplate. Mixture will automatically fill this folder with your combined css files, combined javascript files and include their minified versions as well. All images should also be placed in the images folder inside assets.
+This folder will be initially empty of any real files when you download TopShelf. Files will automatically be added inside this folder with your combined css files, combined javascript files and include their minified versions as well. All images should also be placed in the /assets/images.
 
 #### 2b. Topshelf Nomenclature
 
@@ -113,7 +113,7 @@ The bartender.scss file is responsible for mixing all of our recipes, ingredient
 
 This special .mix file allows us to import multiple JS files into one finalized JS file to reduce HTTP requests / clutter. By default, jQuery and Modernizr are combined. Feel free to rename for your project.
 
-Still having trouble? [Submit an issue](https://github.com/qburns/topshelf/issues) on github and I'll try to help.
+**Still having trouble?** [Submit an issue](https://github.com/qburns/topshelf/issues) on github and I'll try to help.
 
     Thanks to @89yesler for idea on naming convention/some file structure things.
 
