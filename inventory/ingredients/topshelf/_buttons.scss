@@ -90,7 +90,7 @@ The Button Mixin  // Arguments: background-color, style, rounded-corners, icon, 
   }
 
   @if $style == outline {
-    color: $bg;
+    color: darken($bg,7);
   } @else {
     color: $color;
   }
@@ -101,7 +101,7 @@ The Button Mixin  // Arguments: background-color, style, rounded-corners, icon, 
     background: $bg;
   }
 
-  @include transition(.3s);
+  @include transition(.28s);
   font: {
     family: $sans-serif;
     weight: 800;
@@ -116,7 +116,7 @@ The Button Mixin  // Arguments: background-color, style, rounded-corners, icon, 
   }
 ;
   @if $style == pop {
-    border-bottom: .2em solid darken($bg, 7)
+    border-bottom: 0.05em solid darken($bg, 7)
   } @else if $style == outline {
     border: .16em solid darken($bg, 7)
   }
@@ -139,7 +139,7 @@ The Button Mixin  // Arguments: background-color, style, rounded-corners, icon, 
         padding: 1.2em 2.3em;
 
         &:before {
-          @include transition(.35s);
+          @include transition(.28s);
           content: '';
           width: 0;
           left: 50%;
@@ -167,7 +167,7 @@ The Button Mixin  // Arguments: background-color, style, rounded-corners, icon, 
           border: .16em solid darken($bg, 7);
 
           &:before {
-            @include transition(.45s);
+            @include transition(.40s);
             content: '';
             width: 0;
             left: 0%;
