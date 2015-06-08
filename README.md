@@ -23,7 +23,7 @@ Mixture as of this writing has libsass disabled in Windows. It's enabled by defa
 
 **Looking to use Topshelf without Mixture?**
 
-    If you're looking to use this boilerplate without Mixture(like with Grunt/Gulp/Yeoman etc), you can certainly do so. You'll need to remove the ".mix" specific JS file inside inventory and bring your own HTML/templates. You can continue to use the Liquid templating system, but you'll need to have a plugin for that inside your preprocessor file. You'll get all the benefits of the Bourbon.io stack, as well as all the TopShelf goodies.
+If you're looking to use this boilerplate without Mixture(like with Grunt/Gulp/Yeoman etc), you can certainly do so. You'll need to remove the ".mix" specific JS file inside inventory and bring your own HTML/templates. You can continue to use the Liquid templating system, but you'll need to have a plugin for that inside your preprocessor file. You'll get all the benefits of the Bourbon.io stack, as well as all the TopShelf goodies.
 
 ### 1b. What's included?
 
