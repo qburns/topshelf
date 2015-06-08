@@ -11,7 +11,7 @@ COLORS/TEXT/LINKS
 
 $main: #FBFCFC;
 $main-dark: #BDC3C7;
-$text: #333;
+$base-font-color: #333;
 $link: #E74C3C;
 $hover: #D14233;
 
@@ -21,7 +21,6 @@ a:hover {color:$hover;}
 a:active {color:$link;}
 
 
-$sans-serif: “HelveticaNeue”, “Helvetica Neue”, Helvetica, Tahoma, Arial, sans-serif;
-$serif: Garamond, "Adobe Garamond Pro", "Hoefler Text", Georgia, serif;
-
+$sans-serif: “HelveticaNeue”, “Helvetica Neue”, Helvetica, 'Trebuchet MS', Tahoma, Arial, sans-serif;
+$serif: Garamond, "Adobe Garamond Pro", "Hoefler Text", Palatino, Georgia, serif;
 
