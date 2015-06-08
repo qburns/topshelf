@@ -49,7 +49,7 @@ Garnish is a collection of Sass mixins and functions designed to make your life 
 
 ####[Chasers (for Bourbon)](https://github.com/kennethormandy/chasers):
 
-Bourbon Neat helpers, making complex, mobile-first layouts a little easier.
+Collection of Bourbon Neat helpers.
 
 #### [Modernizr-mixin](https://github.com/danielguillan/modernizr-mixin):
 
