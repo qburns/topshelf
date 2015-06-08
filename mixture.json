@@ -14,7 +14,7 @@
   "customRuby": false,
   "customRubyPath": null,
   "customTodos": null,
-  "debug": false,
+  "debug": true,
   "domain": null,
   "followLeader": true,
   "ignoreDir": [
@@ -41,14 +41,14 @@
   ],
   "preprocessorScriptOutput": "assets/scripts",
   "preprocessorStyleOutput": "assets/styles",
-  "projectDescription": "Coming Soon",
-  "projectName": "Top Shelf Boilerplate - MIXTURE",
+  "projectDescription": "Bourbon, Neat, Bitters & extras, chilled with Normalize, jQuery & Modernizr.",
+  "projectName": "TopShelf for Bourbon.io",
   "publishedId": "",
   "remoteDebugPort": 0,
   "routes": null,
   "sass": {
     "outputStyle": "nested",
-    "useLibSass": false
+    "useLibSass": true
   },
   "serverHostname": null,
   "serverPort": null,
