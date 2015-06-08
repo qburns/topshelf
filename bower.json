@@ -1,7 +1,7 @@
 {
   "name": "Top Shelf for Mixture.io |  Bourbon, Neat & Bitters chilled with extras",
   "version": "1.0.0",
-  "homepage": "http://potenti.al",
+  "homepage": "https://github.com/qburns/topshelf",
   "description": "TBA",
   "keywords": [
     "sass",
@@ -15,7 +15,7 @@
     "boilerplate"
   ],
   "authors": [
-    "Potenti.al (http://potenti.al)"
+    "Quinton Burns (https://github.com/qburns/)"
   ],
   "license": "MIT",
   "ignore": [
