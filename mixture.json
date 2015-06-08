@@ -50,7 +50,7 @@
   "routes": null,
   "sass": {
     "outputStyle": "nested",
-    "useLibSass": false
+    "useLibSass": true
   },
   "serverHostname": null,
   "serverPort": null,
