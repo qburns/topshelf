@@ -1,0 +1,18 @@
+{
+  "icons" : [
+    {
+      "title" : "Fast To Start",
+      "text" : "TopShelf includes everything you need to hit the ground running with Bourbon and Bourbon Neat."
+    },
+
+    {
+      "title" : "Powerful Extras",
+      "text" : "Extended icon support allows you to import icons on the fly! Generate stylish useful buttons with one line."
+    },
+
+    {
+      "title" : "Bower Support",
+      "text" : "With TopShelf, you won't have to hunt for new versions or worry about your code being overwritten."
+    }
+  ]
+}

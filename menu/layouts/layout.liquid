@@ -33,11 +33,10 @@
 
     {% block footer %}{% endblock %}
 
-
     <!-- Default Scripts - Accountant holds Google Analytics -->
     {{ "barback.js" | asset_url | script_tag }}
     {% include "scripts" %}
-    {% include "accountant" %}
+    {% include "analytics" %}
 
     <!-- Script block allowing child pages to inject their own scripts -->
     {% block scripts %}{% endblock %}

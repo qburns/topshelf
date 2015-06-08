@@ -4,32 +4,39 @@
 
 // TODO: Delete this default example scss sheet and make your own magic happen
 
-
 /* ===================================
   Below would be in _structure.scss
 ===================================*/
-
-.container {
-  //Using a garnish mixin for media + easy padding
-}
 
 
 /* ===================================
   Below would be in _ambiance.scss
 =================================== */
-$blue-shade-1: #1A6192;
-$blue-shade-2: #0F3752;
-$blue-shade-3: #1f70aa;
-$blue-shade-4: #3094ea;
-$blue-shade-5: #2facff;
+$base-cyan: #00afee;
+$base-magenta: #fc1388;
+$base-yellow: #dbcc33;
+$base-orange: #FF8C00;
+$base-green: #00a458;
+$base-red: #fd1f1c;
 
-$link: $blue-shade-4;
-$hover: $blue-shade-3;
-a:link { color:$link; text-decoration: none; }
-a:visited {color:$link;}
-a:hover {color:$hover;}
-a:active {color:$link;}
+$link: $base-red;
+$hover: lighten($base-red, 20%);
+a:link {
+  color: $link;
+  text-decoration: none;
+}
 
+a:visited {
+  color: $link;
+}
+
+a:hover {
+  color: $hover;
+}
+
+a:active {
+  color: $link;
+}
 
 /* ====================================================
   Header styles (Would be @import '/ingredients/header';)
@@ -37,9 +44,9 @@ a:active {color:$link;}
 .psuedo_header {
 
   @include span-columns(12);
-  @include margin-v( modular-scale(0) );
+  @include margin-v(modular-scale(0));
 
-  display:inline-block;
+  display: inline-block;
 
   h5 {
     @include span-columns(12);
@@ -47,8 +54,8 @@ a:active {color:$link;}
     display: inline-block;
     font-weight: weight(thin); //using Garnish mixin for font weights
     letter-spacing: em(.5);
-    font-size:1.3em;
-    color:#000;
+    font-size: 1.3em;
+    color: #000;
     @include media($medium-screen) {
       @include span-columns(8);
     }
@@ -68,7 +75,8 @@ a:active {color:$link;}
     }
   }
 
-  .header_right { //Currently empty, will be adding things
+  .header_right {
+    //Currently empty, will be adding things
 
     padding-top: 20px;
 
@@ -82,29 +90,22 @@ a:active {color:$link;}
 
 }
 
-
 /*===========================================================
   Masthead styles (Would be @import '/ingredients/masthead')
 =============================================================*/
-@import "../recipes/refills/textures";
 
 .masthead-grad {
-  @include span-columns(12);
-  background-image: linear-gradient(180deg, transparent 0%, rgba(200,200,200,0.1) 100%);
+  background-image: linear-gradient(180deg, transparent 0%, rgba(200, 200, 200, 0.1) 100%);
 }
-
 
 .masthead {
 
-    @include outer-container();
-    text-align:center;
+  @include outer-container();
+  @include outer-pad();
 
-  .container {
-    display:inline-block;
-  }
+  text-align: center;
 
   h1 {
-
 
     font-weight: weight(thin);
     font-size: 3.5em;
@@ -116,30 +117,28 @@ a:active {color:$link;}
       font-size: 4em;
     }
 
-
     a {
-      @include ts-button($blue-shade-4, outline, false, '', left);
+      @include ts-button($base-red, outline, false, '', left);
       @include padding-v(.6em);
 
       @include media($small-screen) {
-        @include span-columns(12);
+        @include span-columns(8);
+        @include shift(2);
         margin-top: modular-scale(0);
         vertical-align: top;
-        display:block;
+        display: block;
       }
 
       font-weight: weight(light);
       font-size: 0.7rem;
-      letter-spacing: em(1.2);
+      letter-spacing: rem(1.2);
 
       @include media($medium-screen-up) {
-        margin: 0 0 0 em(25);
+        margin: 0 0 0 rem(25);
         vertical-align: middle;
       }
 
-
     }
-
 
   }
 
@@ -148,9 +147,9 @@ a:active {color:$link;}
     @include omega();
 
     margin: modular-scale(0) 0 modular-scale(1) 0;
-    display:block;
+    display: block;
 
-    color:#333;
+    color: #333;
     font-weight: weight(light);
     font-size: 1.1em;
 
@@ -166,37 +165,342 @@ a:active {color:$link;}
   }
 
   .github_button {
-    @include ts-button($blue-shade-4, pop, false, 'github', left);
+    @include ts-button($base-red, pop, false, 'github-alt', left);
     margin-bottom: modular-scale(3);
 
   }
 
 }
 
-
 /*===============================================================================
   Three Column Top (Would be something like @import '/specials/home/three_icon')
 ================================================================================*/
 
 .three_icon {
-  @include span-columns(12);
+  @include outer-container();
 
-  .one {
-    @include insert-icon('user', after);
+  @include media($small-screen) {
+    @include outer-pad();
   }
 
-  .one {
-    @include insert-icon('user', after);
+  text-align: center;
+
+  > div {
+    @include span-columns(12);
+    @include omega();
+    @include margin-v(flex-gutter());
+    @include media($large-screen) {
+      @include span-columns(4);
+    }
+
   }
 
-  .one {
-    @include insert-icon('user', after);
+  .icon1 {
+    color: $base-cyan;
+    .icon {
+      @include insert-icon('bolt', before);
+    }
   }
 
+  .icon2 {
+    color: $base-green;
+    .icon {
+      @include insert-icon('magic', before);
+    }
 
+  }
+
+  .icon3 {
+    color: $base-orange;
+    .icon {
+      @include insert-icon('history', before);
+      @include transform(scaleX(-1));
+    }
+
+  }
+
+  .icon1, .icon2, .icon3 {
+
+    p {
+
+      @include margin-h(auto);
+      @include margin-v(modular-scale(0));
+
+      color: $base-font-color;
+      font-size: 1.2em;
+      display: inline-block;
+      line-height: modular-scale(2);
+
+      @include media($medium-screen) {
+        padding: 0 20%;
+      }
+
+    }
+
+    .icon {
+
+      height: 0;
+      margin: 0 auto;
+      font-size: 3.5em;
+
+      @include media($small-medium-screen-only) {
+        @include span-columns(2);
+        @include shift(1);
+        padding-bottom: flex-gutter();
+
+        &:before {
+          @include center(true, false);
+        }
+      }
+
+      @include media($medium-screen) {
+        @include shift(2.5);
+        font-size: 5em;
+      }
+
+      @include media($large-screen) {
+        font-size: 5em;
+        clear: both;
+        width: 55%;
+        padding-bottom: 55%;
+        border: 1px solid;
+        border-radius: 50%;
+
+        &:before {
+          @include center(true, true);
+        }
+
+      }
+
+    }
+
+    h3 {
+      letter-spacing: em(.5);
+      margin-top: (modular-scale(0));
+
+      @include media($small-medium-screen-only) {
+        @include shift(1);
+        @include span-columns(7);
+        @include omega();
+        @include margin-v(modular-scale(1));
+        font-size: 1.5em;
+        text-align: left;
+      }
+
+      @include media($medium-screen) {
+        @include shift(0);
+        @include span-columns(7);
+        font-size: 2em;
+      }
+
+    }
+
+  }
 
 }
 
+/*===============================================================================
+  README (Would be something like @import '/specials/home/readme')
+================================================================================*/
+
+.readme {
+  @include padding-v(flex-gutter());
+  width: 100%;
+  min-height: 250px;
+  background: rgba(200, 200, 200, 0.1);
+  margin-bottom: flex-gutter();
+
+  .inner {
+    @include outer-container();
+
+    @include media($small-screen) {
+      @include outer-pad();
+    }
+
+    h2, h3, h4 {
+      font-family: $serif;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      text-align: center;
+    }
+
+    h3 {
+      color: lighten($base-font-color, 5);
+      margin-top: modular-scale(1);
+    }
+
+    h4 {
+      @include margin(modular-scale(-1) 0 0 modular-scale(0));
+      color: lighten($base-font-color, 10);
+    }
+
+    p {
+      color: lighten($base-font-color, 20);
+    }
+
+
+    li {
+      margin-top: modular-scale(3);
+    }
+
+    p + p, h4 + p, h5 {
+      @include margin(modular-scale(2) 0 0 modular-scale(3));
+    }
+
+    .thanks {
+      color: lighten($base-font-color, 50);
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    h5 + p {
+      @include margin(0 0 0 modular-scale(3));
+    }
+
+    p + h4 {
+      margin-top: modular-scale(2);
+    }
+
+  }
+
+}
+
+/*===============================================================================
+  FOOTER (Would be something like @import '/ingredients/footer')
+================================================================================*/
+
+.footer-2 {
+  $footer-bg-color: #000;
+  $footer-background: lighten($footer-bg-color, 20);
+  $footer-color: #FFF;
+  $footer-link-color: transparentize($footer-color, 0.3);
+  $footer-disclaimer-color: transparentize($footer-color, 0.8);
+
+  @include outer-pad();
+  @include padding-v( modular-scale(0) );
+  background: $footer-background;
+  overflow:hidden;
+  width: 100%;
+
+  .inner {
+    @include outer-container();
+
+
+  .left-side {
+
+    @include media($small-screen)  {
+      @include span-columns(6);
+    }
+
+  }
+  .footer-logo {
+    margin-right: 1em;
+    margin-bottom: 0em;
+    float: left;
+  }
+
+  .footer-logo img {
+    height: 1.6em;
+  }
+
+  ul {
+    line-height: 1.5em;
+    margin: 0 0 0 0;
+    padding: 0;
+    float: left;
+
+    @include media($medium-screen-up) {
+      line-height: 1.8em;
+      margin-left: 1em;
+      margin-bottom: 0;
+    }
+  }
+
+  ul li {
+    font-weight: 800;
+    list-style: none;
+    padding-right: 1em;
+
+    @include media($medium-screen-up) {
+      display: inline;
+      text-align: left;
+    }
+  }
+
+  ul li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  .footer-secondary-links {
+
+    @include media($small-screen)  {
+      @include span-columns(5);
+      @include shift(1);
+    }
+    @include media($medium-screen-up) {
+      float: right;
+    }
+
+    li {
+      font-size: 0.8em;
+      font-weight: 400;
+      margin-bottom: 1em;
+
+    }
+
+    ul.footer-social {
+
+      @include media($medium-screen-up) {
+        float: right;
+        margin-top: 0;
+      }
+
+      li {
+        font-size: 1em;
+        float: left;
+        line-height: 0;
+        margin: 0;
+        padding-right: 0.7em;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      aside {
+        vertical-align: middle;
+        margin: .6em em(20) 0 0;
+      }
+
+      .fb, .twitter, .yt {
+        opacity: 0.7;
+        padding: 1px;
+        font-size:1.5em;
+
+        &:focus,
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .fb {  @include insert-icon('facebook-square',before);  }
+      .twitter {  @include insert-icon('twitter-square',before);  }
+      .yt {  @include insert-icon('youtube-square',before);  }
+
+        }
+      }
+    }
+  }
 
 
 

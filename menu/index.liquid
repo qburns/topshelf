@@ -1,47 +1,298 @@
 {% block content %}
-    <!-- TODO: Delete everything in this container and make your own mix -->
+
+    <!-- TODO: Delete everything in this page and make your own mix. Make sure you take a look at bartender.scss too :) -->
 
     <div id="wrapper">
 
         <div class="container">
 
             <div class="psuedo_header">
-                <h5>A <a href="http://mixture.io" target="_blank" title="Mixture.io"><div>Mixture.io</div></a> Boilerplate</h5>
+
+                <h5>A <a href="http://mixture.io" target="_blank" title="Mixture.io">
+                        <div>Mixture.io</div>
+                    </a> Boilerplate
+                </h5>
+
                 <div class="header_right"></div>
             </div>
+
+        </div>
+
     </div>
+
+
+
+    <div class="masthead-grad">
+        <section class="masthead">
+            <h1>TopShelf<a href="http://mixture.io" target="_blank"><span>FOR</span> MIXTURE</a></h1>
+
+            <h2>Bourbon, Neat, Bitters &amp; extras, chilled with Normalize, jQuery & Modernizr.</h2>
+
+
+            <a href="http://github.com/qburns/topshelf" class="github_button">View on Github</a>
+
+        </section>
+    </div>
+
+
+    <section class="three_icon">
+
+        <!--
+
+        An example of using the Liquid templating system to pull Data in a for loop.
+
+        Here we're loading in the data for these icons from /models/iconexample.json.
+        You can delete it when you're ready to begin your project.
+
+        This isn't the most practical use for this feature, but it's an example of it in action.
+        See these pages for more: http://docs.mixture.io/templates // http://docs.mixture.io/models
+
+        -->
+
+        {% model "iconexample.json" %}
+
+        {% for icon in model.icons %}
+
+            <div class="icon{{ forloop.index }}">
+                <div class="icon"></div>
+                <h3>{{ icon.title }}</h3>
+
+                <p>{{ icon.text }}</p>
+            </div>
+
+        {% endfor %}
+
+    </section>
+
+    <section class="readme">
+        <div class="inner">
+            <h2>USING TOPSHELF</h2>
+            <ol>
+                <li>
+                    <h3>1. Before You Begin</h3>
+                    <h4>1a. General Info</h4>
+
+                    <p>TopShelf is built for use with <a href="http://mixture.io" target="_blank">Mixture.io</a> first
+                        and foremost.
+                        If you're planning on using it with Mixture as intended, clone the repository and you'll be
+                        ready to get to work. There are a few TODOs included to get yourself started.</p>
+
+                    <p>
+                        <strong>Debug Mode is turned on by default</strong>
+                        <br/>Debug mode will use your unminified assets during testing and will leave comments intact.
+                        You can disable this by turning "debug" from true to false inside "mixture.json" in the project
+                        root.
+                    </p>
+
+                    <p>
+                        <strong>Are you on Windows?</strong>
+                        <br/>Mixture as of this writing has libsass disabled in Windows. It's enabled by default in this
+                        project(simply because it's faster), but can be disabled by changing "uselibsass" from true to
+                        false inside "mixture.json" in the project root.
+                    </p>
+
+                    <p>
+                        <strong>Looking to use Topshelf without Mixture?</strong>
+                        <br/>If you're looking to use this boilerplate without Mixture(like with Grunt/Gulp/Yeoman etc),
+                        you can certainly do so. You'll need to remove the ".mix" specific JS file inside inventory and
+                        bring your own HTML/templates. You can continue to use the Liquid templating system, but you'll
+                        need to have a plugin for that inside your preprocessor file.
+                        You'll get all the benefits of the Bourbon.io stack, as well as all the TopShelf goodies.
+                    </p>
+                </li>
+
+                <li>
+
+                    <h4>1b. What's included?</h4>
+
+                    <h5><a href="http://bourbon.io" target="_blank">Bourbon</a>:</h5>
+
+                    <p>Bourbon is a library of pure Sass mixins that are designed to be simple and easy to use. No
+                        configuration required. The mixins aim to be as vanilla as possible, meaning they should be as
+                        close to the original CSS syntax as possible.</p>
+
+                    <h5><a href="http://neat.bourbon.io" target="_blank">Bourbon Neat</a>:</h5>
+
+                    <p>Neat is a semantic grid framework built on top of Sass and Bourbon. It is simple enough to get
+                        you up and running in minutes, and powerful enough to handle any responsive layout you can dream
+                        of.</p>
+
+                    <h5><a href="http://bitters.bourbon.io" target="_blank">Bourbon Bitters</a>:</h5>
+
+                    <p>Bitters helps designers start projects faster by defining a basic set of Sass variables, default
+                        element style and project structure. It’s been specifically designed for use within web
+                        applications. Bitters should live in your project’s root Sass directory and we encourage you to
+                        modify and extend it to meet your design and brand requirements.</p>
+
+
+                    <h5><a href="http://refills.bourbon.io" target="_blank">Bourbon Refills</a>:</h5>
+
+                    <p>Components and patterns built with Bourbon and Neat.</p>
+
+                    <h5><a href="https://github.com/paulozoom/garnish" target="_blank">Garnish (for Bourbon)</a>:</h5>
+
+                    <p>Garnish is a collection of Sass mixins and functions designed to make your life a tiny bit
+                        easier.</p>
+
+                    <h5><a href="https://github.com/kennethormandy/chasers" target="_blank">Chasers (for Bourbon)</a>:
+                    </h5>
+
+                    <p>Bourbon Neat helpers, making complex, mobile-first layouts a little easier.</p>
+
+                    <h5><a href="https://github.com/danielguillan/modernizr-mixin" target="_blank">Modernizr-mixin</a>:
+                    </h5>
+
+                    <p>A simple way for DRYier, faster and cleaner Modernizr tests in Sass.</p>
+
+                    <h5><a href="http://bower.io" target="_blank">Bower</a>:</h5>
+
+                    <p>A package manager for the web</p>
+
+                    <h5>The usuals:</h5>
+
+                    <p>All your favorites are included. That means <a href="http://necolas.github.io/normalize.css/"
+                                                                      target="_blank">normalize.css, <a
+                                    href="http://jquery.com" target="_blank">jQuery, <a href="http://modernizr.com/"
+                                                                                        target="_blank">modernizr, <a
+                                            href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome(as
+                                        a mixin!), and <a href="https://html5boilerplate.com/" target="_blank">html5boilerplate</a>
+                                        are all included to give you the ultimate starter toolkit.</p>
+
+                    <h5>TopShelf Extras:</h5>
+
+                    <p>Don't bother including a giant stylesheet just to be able to call easy to remember icon names.
+                        Use FontAwesome shorthand names with the included icon mixin and keep your CSS clean. Want to
+                        use another icon set? Bring your own set and only include what you need! Also included is a
+                        powerful button generator that allows you generate modern-looking buttons with various styles,
+                        automatic font color, rounded corners and even automatically positioned icons!</p>
+                </li>
+            </ol>
+
+            <ol>
+
+                <h3>2. Terminology / File Structure</h3>
+
+                <li>
+                    <h4>2a. Root Folders</h4>
+
+                    <p>TopShelf tries to maintain a clean base file structure. All your finished, production ready code
+                        is placed into /assets/ by Mixture, while all your work in progress / uncombined files reside in
+                        /inventory/ before Mixture uses them.</p>
+
+                    <p>
+                        <strong>/inventory/</strong>
+                        <br/>Inventory is the folder where all of the CSS, SASS, and JS files reside. This folder
+                        contain all of our recipes, ingredients and specials are found, which you'll read about in a
+                        minute.
+                    </p>
+
+                    <p>
+                        <strong>/menu/</strong>
+                        <br/>Pages, templates and layouts are stored here. These files are "on the menu" for Mixture to
+                        use.</p>
+
+                    <p>
+                        <strong>/models/</strong>
+                        <br/>Models contains json files that the Liquid templating system uses. These files can contain
+                        data we use throughout the site in powerful ways.
+                    </p>
+
+                    <p>
+                        <strong>/assets/</strong>
+                        <br/>This folder will be initially empty of any real files when you download the boilerplate.
+                        Mixture will automatically fill this folder with your combined css files, combined javascript
+                        files and include their minified versions as well. All images should also be placed in the
+                        images folder inside assets.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>2b. Topshelf Nomenclature</h4>
+
+                    <p>TopShelf uses some bar related terms for our file/folder structures that I find helpful in daily
+                        use.</p>
+
+                    <p>
+                        /inventory/<strong>recipes/</strong>
+                        <br/>All good drinks start with a recipe, and with TopShelf, it's no different. We include all
+                        of our bower-ready components in this file and import them later.
+                    </p>
+
+                    <p>
+                        /inventory/<strong>ingredients/</strong>
+                        <br/>Ingredients are what give our site style and flavor. Topshelf's extras, as well as site
+                        branding<i>(_ambiance.scss)</i> and grid/structure are included here. You should place any
+                        widely used component styles in their own files/folders here, like <i>/ingredients/_navigation.scss.</i>
+                    </p>
+
+                    <p>
+                        /inventory/<strong>specials/</strong>
+                        <br/>Specials are where we store our page specific styles / page specific components.
+                    </p>
+
+                    <p>
+                        /inventory/<strong>bartender.scss</strong>
+                        <br/>The bartender.scss file is responsible for mixing all of our recipes, ingredients and
+                        specials together and making a final product. We import Bourbon, Neat, Biters and all of our
+                        extras here first. Then we setup our grid, pass in our ambiance / structure files. This will be
+                        generated into <i>/assets/bartender.css</i>. Feel free to rename for your project.
+                    </p>
+
+
+                    <p>
+                        /inventory/<strong>barback.mix.js</strong>
+                        <br/>This special .mix file allows us to import multiple JS files into one finalized JS file to
+                        reduce HTTP requests / clutter. By default, jQuery and Modernizr are combined. Feel free to
+                        rename for your project.
+                    </p>
+
+                    <p>Still having trouble? <a href="https://github.com/qburns/topshelf/issues" target="_blank">Submit
+                            an issue</a> on github and I'll try to help.</p>
+                    <p class="thanks">Thanks to @89yesler for idea on naming convention/some file structure things. </p>
+
+
+
+                </li>
+
+            </ol>
+
         </div>
+    </section>
 
+{% endblock %}
 
+{% block footer %}
 
-            <div class="masthead-grad">
-                <section class="masthead">
-                     <div class="container">
-                        <h1>TopShelf<a href="http://mixture.io" target="_blank"><span>FOR</span> MIXTURE</a></h1>
-                        <h2>Bourbon, Neat, Bitters &amp; extras, chilled with Normalize, jQuery & Modernizr.</h2>
-                        <!--
-                        <h4>This Mixture.io boilerplate is built with </h4>
-                        <a href="http://bourbon.io">Bourbon</a> |
-                        <a href="http://neat.bourbon.io">Bourbon Neat</a> |
-                        <a href="http://bitters.bourbon.io">Bourbon Bitters</a> |
-                        <a href="https://github.com/kennethormandy/chasers">Chasers</a> |
-                        <a href="https://github.com/paulozoom/garnish">Garnish</a>
-                        <p>chilled with Normalize, jQuery & Modernizr.</p>
+    <footer class="footer-2" role="contentinfo">
+        <section class="inner">
+            <div class="left-side">
+                <div class="footer-logo">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png"
+                         alt="Logo image">
+                </div>
+                <ul>
+                    <li><a href="javascript:void(0)">About</a></li>
+                    <li><a href="javascript:void(0)">Contact</a></li>
+                    <li><a href="javascript:void(0)">Products</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-secondary-links">
+                <ul>
+                    <li><a href="javascript:void(0)">Legal Information</a></li>
+                </ul>
 
- -->
-                        <a href="http://github.com/qburns/topshelf" class="github_button">View on Github</a>
-
-                    <section class="three_icon">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
-                    </section>
-
-                    </div>
-                </section>
-              </div>
-        </div>
-
-
+                <ul class="footer-social">
+                    <li><a href="javascript:void(0)"><aside class="fb"></aside>
+                        </a></li>
+                    <li><a href="javascript:void(0)">
+                            <aside class="twitter"></aside>
+                        </a></li>
+                    <li><a href="javascript:void(0)">
+                            <aside class="yt"></aside>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 {% endblock %}
