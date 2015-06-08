@@ -3,9 +3,9 @@ TopShelf is a modern boilerplate designed for use with Mixture. It enables you t
 TopShelf is Bourbon, Neat, Bitters & extras, chilled with Normalize, jQuery & Modernizr. Read more below or clone this repository and get right to work.
 
 ## USING TOPSHELF
-
-#### 1. Before You Begin
-
+=================
+1. Before You Begin
+------------------------
     #### 1a. General Info
 
     TopShelf is built for use with [Mixture.io](http://mixture.io) first and foremost. If you're planning on using it with Mixture as intended, clone the repository and you'll be ready to get to work. There are a few TODOs included to get yourself started.
