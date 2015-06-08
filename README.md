@@ -15,11 +15,11 @@ TopShelf is built for use with [Mixture.io](http://mixture.io) first and foremos
 
 **Debug Mode is turned on by default**
 
-    Debug mode will use your unminified assets during testing and will leave comments intact. You can disable this by turning "debug" from true to false inside "mixture.json" in the project root.
+Debug mode will use your unminified assets during testing and will leave comments intact. You can disable this by turning "debug" from true to false inside "mixture.json" in the project root.
 
  **Are you on Windows?**
  
-    Mixture as of this writing has libsass disabled in Windows. It's enabled by default in this project(simply because it's faster), but can be disabled by changing "uselibsass" from true to false inside "mixture.json" in the project root.
+Mixture as of this writing has libsass disabled in Windows. It's enabled by default in this project(simply because it's faster), but can be disabled by changing "uselibsass" from true to false inside "mixture.json" in the project root.
 
 **Looking to use Topshelf without Mixture?**
 
