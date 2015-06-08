@@ -44,7 +44,7 @@ Components and patterns built with Bourbon and Neat.
 
 Garnish is a collection of Sass mixins and functions designed to make your life a tiny bit easier.
 
-#####[Chasers (for Bourbon)](https://github.com/kennethormandy/chasers):
+####[Chasers (for Bourbon)](https://github.com/kennethormandy/chasers):
 
 Bourbon Neat helpers, making complex, mobile-first layouts a little easier.
 
