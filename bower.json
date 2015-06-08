@@ -2,7 +2,7 @@
   "name": "Top Shelf for Mixture.io |  Bourbon, Neat & Bitters chilled with extras",
   "version": "1.0.0",
   "homepage": "https://github.com/qburns/topshelf",
-  "description": "TBA",
+  "description": "Modern boilerplate with Bourbon, Neat, Bitters & extras, chilled with Normalize, jQuery & Modernizr.",
   "keywords": [
     "sass",
     "bourbon",
